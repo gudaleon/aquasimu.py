@@ -1,0 +1,70 @@
+
+group id: -1
+K_ADS,5
+K_N,3
+Q_MAX,4
+THETA_N,2
+VMAX_N,1
+
+group id: -1
+K_ADS,5
+K_N,3
+Q_MAX,4
+THETA_N,2
+VMAX_N,1
+
+group id: -1
+K_ADS,1
+K_N,4
+Q_MAX,2
+THETA_N,3
+VMAX_N,5
+
+group id: -1
+K_ADS,1
+K_N,4
+Q_MAX,2
+THETA_N,3
+VMAX_N,5
+
+group id: -1
+K_ADS,1
+K_N,4
+Q_MAX,2
+THETA_N,3
+VMAX_N,5
+
+group id: -1
+K_ADS,1
+K_N,4
+Q_MAX,2
+THETA_N,3
+VMAX_N,5
+
+group id: -1
+K_ADS,1,2
+K_N,7,8
+Q_MAX,3,4
+THETA_N,5,6
+VMAX_N,9,10
+
+group id: -1
+K_ADS,1,2
+K_N,7,8
+Q_MAX,3,4
+THETA_N,5,6
+VMAX_N,9,10
+
+group id: -1
+K_ADS,1,2
+K_N,7,8
+Q_MAX,3,4
+THETA_N,5,6
+VMAX_N,9,10
+
+group id: -1
+K_ADS,1,2
+K_N,7,8
+Q_MAX,3,4
+THETA_N,5,6
+VMAX_N,9,10

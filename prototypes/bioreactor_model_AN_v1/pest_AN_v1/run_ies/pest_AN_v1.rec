@@ -1,0 +1,1451 @@
+             pestpp-ies - a GLM iterative Ensemble Smoother
+                      for PEST(++) datasets 
+
+                 by the PEST++ developement team
+
+
+
+
+
+version: 5.2.16
+binary compiled on Dec  1 2024 at 10:51:08
+
+using control file: "pest_AN_v1.pst"
+in directory: "/workspace/bioreactor_model_AN_v1/pest_AN_v1/run_ies"
+on host: "grok-bot-vm-454799141"
+started at 11/22/26 22:30:38
+
+Note: 3 unused lines in pest control file:
+  -->  line number 6: '2.000000E+01  -3.000000E+00   3.000000E-01   1.000000E-02        -7' 
+  -->  line number 10: '0         0         0' 
+  -->  line number 12: '1' 
+
+    This software has been approved for release by the
+    U.S.Geological Survey(USGS).Although the software has 
+    been subjected to rigorous review, the USGS reserves the
+    right to update the software as needed pursuant to further
+    analysisand review.No warranty, expressed or implied, is 
+    made by the USGS or the U.S.Government as to the
+    functionality of the softwareand related material nor shall
+    the fact of release constitute any such warranty.
+    Furthermore, the software is released on condition that
+    neither the USGS nor the U.S.Government shall be held
+    liable for any damages resulting from its authorized 
+    or unauthorized use.
+
+
+Case dimensions:- 
+    Number of parameters = 5
+    Number of adjustable parameters = 5
+    Number of observations = 244
+    Number of non-zero weighted observations = 242
+    Number of prior estimates = 0
+
+PEST Control Information
+    relparmax = 10
+    facparmax = 10
+    facorig = 0.001
+    phiredswh = 0.1
+    noptmax = 4
+    phiredstp = 0.01
+    nphistp = 3
+    nphinored = 3
+    relparstp = 0.01
+    nrelpar = 3
+
+
+    PEST++ OPTIONS: 
+
+...general options (used in multiple tools): 
+svd_pack: redsvd
+lambda_scale_fac: 0.7,1,
+forgive_unknown_args: 0
+max_run_fail: 3
+panther_poll_interval: 1
+parameter_covariance: 
+observation_covariance: 
+hotstart_resfile: 
+overdue_resched_fac: 1.15
+overdue_giveup_fac: 100
+overdue_giveup_minutes: 1e+30
+condor_submit_file: 
+tie_by_group: 0
+par_sigma_range: 4
+enforce_tied_bounds: 0
+debug_parse_only: 0
+check_tplins: 1
+fill_tpl_zeros: 0
+tpl_force_decimal: 0
+additional_ins_delimiters: 
+random_seed: 358183147
+num_tpl_ins_threads: 1
+save_binary: 0
+ensemble_output_precision: 6
+panther_echo: 1
+panther_agent_restart_on_error: 0
+panther_agent_no_ping_timeout_secs: -1
+panther_debug_loop: 0
+debug_check_par_en_consistency: 0
+panther_agent_freeze_on_fail: 0
+panther_transfer_on_finish: 
+panther_transfer_on_fail: 
+
+...pestpp-glm specific options:
+max_n_super: 1000000
+super_eigthresh: 1e-06
+n_iter_base: 1000000
+n_iter_super: 0
+super_relparmax: 0.1
+max_super_frz_iter: 20
+max_reg_iter: 20
+lambdas: 0.1,1,10,100,1000,
+iteration_summary: 0
+der_forgive: 1
+uncertainty: 1
+forecasts: FKGN,FKGP,
+base_jacobian: 
+glm_num_reals: 0
+jac_scale: 1
+glm_normal_form: DIAG
+glm_debug_der_fail: 0
+glm_debug_lamb_fail: 0
+glm_debug_real_fail: 0
+glm_accept_mc_phi: 0
+glm_rebase_super: 0
+glm_iter_mc: 0
+glm_high_2nd_iter_phi: 0
+
+...pestpp-swp options:
+sweep_parameter_csv_file: 
+sweep_output_csv_file: sweep_out.csv
+sweep_chunk: 500
+sweep_forgive: 0
+sweep_base_run: 0
+sweep_include_regul_phi: 0
+
+...pestpp-opt options:
+opt_objective_function: 
+opt_coin_log: 1
+opt_skip_final: 0
+opt_std_weights: 0
+opt_stack_size: 0
+opt_par_stack: 
+opt_obs_stack: 
+opt_decision_variable_groups: 
+opt_external_variable_groups: 
+opt_constraint_groups: 
+opt_risk: 0.5
+opt_iter_derinc_fac: 1
+opt_direction: 1
+opt_iter_tol: 0.001
+opt_recalc_fosm_every: 1
+opt_chance_points: SINGLE
+opt_chance_schedule: 
+
+...pestpp-sqp options:
+sqp_dv_en: 
+sqp_obs_restart_en: 
+sqp_num_reals: -1
+sqp_update_hessian: 0
+sqp_scale_facs:
+  1e-05
+  0.0001
+  0.0005
+  0.001
+  0.0025
+  0.005
+  0.01
+  0.05
+  0.075
+  0.1
+  0.25
+  0.5
+  1
+  2
+  5
+  10
+
+...pestpp-mou options:
+mou_generator: PSO
+mou_population_size: 100
+mou_dv_population_file: 
+mou_obs_population_restart_file: 
+mou_objectives: 
+mou_max_archive_size: 500
+mou_risk_objective: 0
+mou_verbose_level: 1
+mou_env_selector: NSGA
+mou_mating_selector: TOURNAMENT
+mou_crossover_prob: 0.75
+mou_mutation_prob: -999
+mou_de_f: 0.8
+mou_save_population_every: -1
+mou_pso_omega: 0.7
+mou_pso_social_const: 2
+mou_pso_cognitive: 2
+mou_population_schedule: 
+mou_simplex_reflections:10
+mou_simplex_factors: 
+ 0.5
+ 0.6
+ 0.7
+ 0.8
+mou_simplex_mutation: 0
+mou_use_multigen:0
+mou_shuffle_fixed_pars: 0
+
+...shared pestpp-ies/pestpp-da options:
+(note: 'da' args override 'ies' args when using pestpp-da)
+ies_parameter_ensemble: 
+ies_observation_ensemble: 
+ies_weights_ensemble: 
+ies_restart_parameter_ensemble: 
+ies_restart_observation_ensemble: 
+ies_use_approximate_solution: 1
+ies_lambda_mults: 0.5,1,2,
+ies_initial_lambda: 0
+ies_use_approx: 1
+ies_subset_size: 8
+ies_reg_factor: 0
+ies_verbose_level: 1
+ies_use_prior_scaling: 0
+ies_num_reals: 200
+ies_bad_phi: 1.79769e+308
+ies_bad_phi_sigma: 1.79769e+308
+ies_include_base: 1
+ies_use_empirical_prior: 0
+ies_group_draws: 1
+ies_enforce_bounds: 1
+ies_localizer: 
+ies_accept_phi_fac: 1.05
+ies_lambda_inc_fac: 10
+ies_lambda_dec_fac: 0.75
+ies_save_lambda_ensembles: 0
+ies_subset_how: RANDOM
+ies_localize_how: PARAMETERS
+ies_num_threads: -1
+ies_debug_fail_subset: 0
+ies_debug_fail_remainder: 0
+ies_debug_bad_phi: 0
+ies_debug_upgrade_only: 0
+ies_debug_high_subset_phi: 0
+ies_debug_high_upgrade_phi: 0
+ies_csv_by_reals: 1
+ies_autoadaloc: 0
+ies_autoadaloc_sigma_dist: 1
+ies_enforce_chglim: 0
+ies_center_on: 
+ies_no_noise: 0
+ies_drop_conflicts: 0
+ies_save_rescov:0
+ies_pdc_sigma_distance: -1
+ies_use_mda: 0
+ies_mda_init_fac: 10
+ies_mda_dec_fac: 0.5
+ies_localization_type: LOCAL
+ies_upgrades_in_memory: 1
+ies_ordered_binary: 1
+ies_multimodal_alpha: 1
+ies_localizer_forgive_extra: 0
+ies_phi_factors_file: 
+ies_phi_factors_by_real: 0
+ies_n_iter_reinflate: 0
+ies_updatebyreals: 0
+
+pestpp-sen options: 
+gsa_method: MORRIS
+gsa_morris_pooled_obs: 0
+gsa_morris_obs_sen: 1
+gsa_morris_p: 4
+gsa_morris_r: 4
+gsa_morris_delta: 0.6666
+gsa_sobol_samples: 4
+gsa_sobol_par_dist: norm
+
+pestpp-da options (those not shared with pestpp-ies):
+da_parameter_cycle_table: 
+da_observation_cycle_table: 
+da_hotstart_cycle: 0
+da_stop_cycle: 1000000000
+da_use_simulated_states: 1
+da_noptmax_schedule: 
+
+
+
+Model command line(s):- 
+    python forward_run_AN_v1.py
+
+Model interface files:-
+    template files:
+      ./params_AN_v1.tpl
+    model input files:
+      ./params_AN_v1.dat
+
+    instruction files:
+      ./output_AN_v1.ins
+    model output files:
+      ./output_AN_v1.dat
+
+
+Parameter group information
+NAME          INCREMENT TYPE     DERIVATIVE INCREMENT    INCREMENT LOWER BOUND  FORCE CENTRAL     INCREMENT MULTIPLIER
+model               RELATIVE                     0.01                        0         SWITCH                        2
+
+
+
+Parameter information
+NAME         TRANSFORMATION        CHANGE LIMIT  INITIAL VALUE    LOWER BOUND    UPPER BOUND        GROUP          SCALE         OFFSET  DERIVATIVE COMMAND
+k_ads        log                     FACTOR          0.002         0.0001           0.05        model              1              0                   1
+k_n          log                     FACTOR              8            0.1             30        model              1              0                   1
+q_max        log                     FACTOR              2           0.05              6        model              1              0                   1
+theta_n      none                    FACTOR           1.04              1           1.25        model              1              0                   1
+vmax_n       log                     FACTOR              3            0.5             40        model              1              0                   1
+
+
+
+Observation information
+NAME                                VALUE                GROUP              WEIGHT
+fkgn                              25.9129             forecast                   0
+fkgp                              1.57006             forecast                   0
+on_002                            8.92024              nitrate             1.67782
+on_005                            8.71264              nitrate             1.70756
+on_008                            8.88581              nitrate             1.68268
+on_011                            8.64327              nitrate             1.71773
+on_014                            8.25755              nitrate             1.77659
+on_017                            10.6796              nitrate             1.46204
+on_020                            8.40568              nitrate             1.75351
+on_023                            10.0516              nitrate             1.53238
+on_026                            10.0095              nitrate             1.53734
+on_029                             8.6156              nitrate             1.72182
+on_032                            10.4944              nitrate              1.4821
+on_035                             10.256              nitrate             1.50875
+on_038                            10.1515              nitrate             1.52074
+on_041                            9.03708              nitrate             1.66153
+on_044                            10.2232              nitrate             1.51249
+on_047                            11.6791              nitrate             1.36248
+on_050                            10.1952              nitrate              1.5157
+on_053                            9.92559              nitrate             1.54732
+on_056                            7.46194              nitrate             1.91169
+on_059                            9.57988              nitrate             1.58984
+on_062                            6.78747              nitrate             2.04343
+on_065                            8.94777              nitrate             1.67395
+on_068                              8.183              nitrate             1.78843
+on_071                            8.12323              nitrate             1.79804
+on_074                            9.84343              nitrate             1.55722
+on_077                            8.63891              nitrate             1.71837
+on_080                            7.29448              nitrate             1.94279
+on_083                            8.81875              nitrate             1.69223
+on_086                            9.77717              nitrate             1.56529
+on_089                            10.1459              nitrate             1.52139
+on_092                            8.74154              nitrate             1.70335
+on_095                            10.5072              nitrate             1.48069
+on_098                            7.29373              nitrate             1.94293
+on_101                             7.2177              nitrate             1.95739
+on_104                            9.66351              nitrate             1.57934
+on_107                            7.47615              nitrate              1.9091
+on_110                            9.31476              nitrate             1.62407
+on_113                            10.1718              nitrate              1.5184
+on_116                            8.69279              nitrate             1.71046
+on_119                            6.50979              nitrate              2.1031
+on_122                            8.42986              nitrate              1.7498
+on_125                            8.68858              nitrate             1.71107
+on_128                            4.98732              nitrate             2.50397
+on_131                             8.3233              nitrate             1.76627
+on_134                            6.18156              nitrate             2.17828
+on_137                             5.5559              nitrate             2.33757
+on_140                            9.11307              nitrate             1.65111
+on_143                            7.07047              nitrate               1.986
+on_146                            4.76506              nitrate             2.57564
+on_149                            4.44882              nitrate             2.68499
+on_152                             2.6301              nitrate             3.55234
+on_155                            2.32542              nitrate             3.75557
+on_158                            2.03793              nitrate             3.96988
+on_161                            5.04515              nitrate             2.48597
+on_164                             3.6164              nitrate             3.02279
+on_167                            2.49336              nitrate             3.64076
+on_170                            2.45101              nitrate             3.66905
+on_173                            1.61026              nitrate             4.33815
+on_176                            1.43548              nitrate             4.50909
+on_179                            1.78473              nitrate             4.17996
+on_182                            1.64272              nitrate             4.30782
+on_185                            1.58637              nitrate             4.36075
+on_188                           0.882725              nitrate             5.15102
+on_191                           0.833286              nitrate             5.21746
+on_194                            1.26167              nitrate             4.69299
+on_197                            0.98608              nitrate             5.01746
+on_200                            1.44291              nitrate             4.50156
+on_203                            1.39017              nitrate             4.55563
+on_206                            1.03185              nitrate              4.9605
+on_209                            1.10153              nitrate             4.87623
+on_212                             1.3173              nitrate             4.63253
+on_215                            0.58445              nitrate             5.57966
+on_218                           0.894657              nitrate             5.13524
+on_221                           0.498966              nitrate             5.71597
+on_224                           0.892267              nitrate             5.13839
+on_227                           0.728525              nitrate             5.36405
+on_230                            3.28458              nitrate             3.18239
+on_233                            1.91914              nitrate             4.06575
+on_236                            1.57217              nitrate              4.3743
+on_239                             2.4197              nitrate             3.69024
+on_242                            2.13261              nitrate             3.89666
+on_245                            4.73861              nitrate             2.58444
+on_248                            1.62991              nitrate             4.31974
+on_251                            2.54328              nitrate             3.60797
+on_254                            1.43705              nitrate              4.5075
+on_257                            2.69954              nitrate             3.50906
+on_260                            1.35477              nitrate             4.59267
+on_263                            1.41686              nitrate              4.5281
+on_266                            2.77208              nitrate             3.46496
+on_269                             3.0644              nitrate             3.29794
+on_272                            2.63841              nitrate              3.5471
+on_275                            3.51591              nitrate             3.06941
+on_278                            2.45433              nitrate             3.66681
+on_281                            3.85476              nitrate             2.91768
+on_284                            3.80072              nitrate             2.94087
+on_287                            3.79011              nitrate             2.94546
+on_290                             2.9548              nitrate             3.35863
+on_293                             3.5966              nitrate             3.03186
+on_296                            3.68227              nitrate               2.993
+on_299                            4.41503              nitrate             2.69723
+on_302                            4.42074              nitrate             2.69515
+on_305                            5.23381              nitrate             2.42901
+on_308                            4.95809              nitrate             2.51317
+on_311                            6.04283              nitrate              2.2117
+on_314                            4.82414              nitrate             2.55619
+on_317                            4.51028              nitrate             2.66302
+on_320                            5.54981              nitrate             2.33923
+on_323                            5.95511              nitrate             2.23336
+on_326                            6.37909              nitrate              2.1324
+on_329                            6.64483              nitrate             2.07365
+on_332                            7.49474              nitrate             1.90572
+on_335                            6.35588              nitrate             2.13769
+on_338                            5.66758              nitrate             2.30745
+on_341                             6.6567              nitrate              2.0711
+on_344                            7.94108              nitrate             1.82797
+on_347                            7.01814              nitrate             1.99638
+on_350                            7.23782              nitrate             1.95354
+on_353                            7.54508              nitrate             1.89662
+on_356                            9.44176              nitrate             1.60749
+on_359                            6.98525              nitrate             2.00296
+on_362                            7.48236              nitrate             1.90797
+op_002                           0.120612            phosphate             62.3808
+op_005                           0.189292            phosphate             51.3753
+op_008                           0.136405            phosphate             59.4521
+op_011                           0.156911            phosphate             56.0363
+op_014                           0.178155            phosphate             52.8884
+op_017                           0.278048            phosphate             41.8368
+op_020                           0.168942            phosphate             54.2091
+op_023                           0.132929            phosphate             60.0728
+op_026                            0.19473            phosphate             50.6676
+op_029                           0.199458            phosphate             50.0679
+op_032                           0.270724            phosphate             42.4877
+op_035                           0.211129            phosphate             48.6465
+op_038                           0.130582            phosphate             60.4994
+op_041                           0.175017            phosphate              53.331
+op_044                           0.236916            phosphate             45.7754
+op_047                           0.295407            phosphate             40.3708
+op_050                           0.365369            phosphate             35.3751
+op_053                           0.265927            phosphate             42.9252
+op_056                            0.18058            phosphate             52.5514
+op_059                           0.216528            phosphate              48.016
+op_062                           0.157269            phosphate             55.9802
+op_065                           0.252304            phosphate             44.2181
+op_068                           0.193903            phosphate             50.7739
+op_071                           0.206099            phosphate             49.2491
+op_074                           0.284555            phosphate              41.275
+op_077                           0.287086            phosphate             41.0605
+op_080                             0.3461            phosphate             36.6233
+op_083                           0.325338            phosphate             38.0707
+op_086                           0.195666            phosphate             50.5477
+op_089                           0.308693            phosphate             39.3164
+op_092                           0.577568            phosphate             25.7212
+op_095                           0.532445            phosphate             27.3058
+op_098                           0.290125            phosphate             40.8059
+op_101                           0.267567            phosphate             42.7746
+op_104                           0.416565            phosphate             32.4378
+op_107                           0.345376            phosphate              36.672
+op_110                            0.28171            phosphate             41.5188
+op_113                           0.674882            phosphate             22.8602
+op_116                            0.33009            phosphate             37.7294
+op_119                           0.338512            phosphate             37.1393
+op_122                            0.59627            phosphate             25.1171
+op_125                           0.506752            phosphate             28.2985
+op_128                           0.309713            phosphate             39.2378
+op_131                           0.514863            phosphate             27.9774
+op_134                           0.348533            phosphate             36.4609
+op_137                           0.325716            phosphate             38.0433
+op_140                           0.691527            phosphate             22.4334
+op_143                           0.423567            phosphate             32.0736
+op_146                           0.385298            phosphate             34.1706
+op_149                           0.239312            phosphate             45.5257
+op_152                           0.294745            phosphate             40.4249
+op_155                           0.187837            phosphate              51.568
+op_158                           0.228533            phosphate             46.6708
+op_161                           0.363359            phosphate             35.5013
+op_164                           0.323908            phosphate             38.1746
+op_167                           0.354701            phosphate             36.0555
+op_170                            0.25481            phosphate             43.9744
+op_173                           0.244406            phosphate             45.0039
+op_176                           0.284414            phosphate              41.287
+op_179                           0.334688            phosphate              37.405
+op_182                           0.323595            phosphate             38.1975
+op_185                           0.328039            phosphate              37.876
+op_188                           0.138606            phosphate             59.0657
+op_191                           0.244213            phosphate             45.0234
+op_194                           0.294054            phosphate             40.4814
+op_197                           0.316966            phosphate             38.6872
+op_200                            0.35399            phosphate             36.1018
+op_203                           0.267161            phosphate             42.8118
+op_206                           0.271131            phosphate             42.4511
+op_209                           0.339466            phosphate             37.0737
+op_212                           0.307711            phosphate             39.3925
+op_215                           0.273051            phosphate             42.2787
+op_218                           0.216671            phosphate             47.9995
+op_221                           0.261158            phosphate             43.3691
+op_224                           0.278557            phosphate             41.7923
+op_227                           0.289222            phosphate             40.8813
+op_230                           0.641048            phosphate             23.7798
+op_233                           0.309254            phosphate             39.2731
+op_236                           0.394644            phosphate             33.6336
+op_239                           0.254686            phosphate             43.9864
+op_242                           0.335856            phosphate             37.3234
+op_245                           0.608676            phosphate             24.7318
+op_248                            0.37901            phosphate             34.5417
+op_251                           0.364043            phosphate             35.4583
+op_254                           0.351712            phosphate             36.2508
+op_257                           0.455033            phosphate             30.5328
+op_260                           0.243203            phosphate             45.1261
+op_263                           0.293975            phosphate             40.4879
+op_266                           0.220754            phosphate             47.5337
+op_269                           0.284151            phosphate             41.3094
+op_272                           0.331488            phosphate             37.6302
+op_275                           0.218118            phosphate             47.8334
+op_278                           0.203673            phosphate              49.545
+op_281                           0.296812            phosphate             40.2567
+op_284                            0.36795            phosphate             35.2144
+op_287                           0.307616            phosphate             39.3999
+op_290                           0.321644            phosphate             38.3403
+op_293                           0.250714            phosphate              44.374
+op_296                           0.288409            phosphate             40.9493
+op_299                           0.384881            phosphate              34.195
+op_302                           0.307001            phosphate             39.4476
+op_305                           0.330581            phosphate             37.6946
+op_308                           0.339905            phosphate             37.0436
+op_311                           0.286426            phosphate             41.1163
+op_314                           0.324763            phosphate             38.1124
+op_317                           0.268592            phosphate             42.6811
+op_320                           0.289224            phosphate             40.8811
+op_323                           0.272087            phosphate             42.3651
+op_326                           0.248418            phosphate             44.6013
+op_329                           0.579594            phosphate             25.6544
+op_332                           0.443853            phosphate              31.063
+op_335                           0.312031            phosphate             39.0602
+op_338                           0.352951            phosphate             36.1696
+op_341                           0.368226            phosphate             35.1973
+op_344                           0.260555            phosphate             43.4259
+op_347                           0.335313            phosphate             37.3613
+op_350                           0.284759            phosphate             41.2577
+op_353                           0.348653            phosphate             36.4529
+op_356                           0.311701            phosphate             39.0853
+op_359                           0.298505            phosphate             40.1199
+op_362                           0.382323            phosphate             34.3452
+
+
+
+Prior information
+
+   no prior information provided
+
+
+
+PEST SVD Information
+    maxsing = 10000000
+    eigthresh = 1e-06
+
+
+
+
+
+...resetting overdue_giveup_fac to 2.0
+...resetting overdue_resched_fac to 1.15
+
+  ---  initializing  ---  
+...using glm algorithm
+...using REDSVD for truncated svd solve
+...maxsing: 10000000
+...eigthresh:  1e-06
+...initializing localizer
+...not using localization
+...using lambda multipliers: 0.5 , 1 , 2 , 
+...using lambda scaling factors: 0.7 , 1 , 
+...acceptable phi factor:  1.05
+...lambda increase factor:  10
+...lambda decrease factor:  0.75
+...max run fail:  3
+
+  ---  sanity_check warnings  ---  
+...noptmax > 3, this is a lot of iterations for an ensemble method...
+...continuing initialization...
+...initializing prior parameter covariance matrix
+...parcov loaded  from parameter bounds, using par_sigma_range 4
+...initializing observation noise covariance matrix
+WARNING: Cov::try_from(): 2 extra elements in covariance matrix being drop - these are probably for fixed parameters and/or zero-weight observations
+
+...obscov loaded  from observation weights
+...using reg_factor:  0
+...drawing parameter realizations:  200
+...not using prior parameter covariance matrix scaling
+...drawing observation noise realizations:  200
+...setting weights ensemble from control file weights
+...saved weight ensemble to  pest_AN_v1.weights.csv
+checking for denormal values in weights ensemble
+...adding 'base' parameter values to ensemble
+...adding 'base' observation values to ensemble
+...adding 'base' weight values to weight ensemble
+checking for denormal values in pe
+...saved initial parameter ensemble to  pest_AN_v1.0.par.csv
+checking for denormal values in obs + noise ensemble
+...saved obs+noise observation ensemble (obsval + noise realizations) to  pest_AN_v1.obs+noise.csv
+...using subset in lambda testing, number of realizations used in subset testing:  8
+...subset how:  RANDOM
+...centering on ensemble mean vector
+...running initial ensemble of size 200
+...saved initial obs ensemble to pest_AN_v1.0.obs.csv
+
+  ---  pre-drop initial phi summary  ---  
+       phi type           mean            std            min            max
+       measured        16477.9        7852.92        1535.68        35776.7
+         actual        16243.2        7821.92        1285.47        35215.9
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+  ---  observation group phi summary ---  
+       (computed using 'actual' phi)
+           (sorted by mean phi)
+group      count  nconflict      mean       std       min       max   percent       std
+nitrate      121          0  1.11e+04  6.59e+03       188  2.17e+04        66      24.7
+phosphate    121          0  5.19e+03  4.25e+03       131  1.59e+04        34      24.7
+    Note: 'percent' is the percentage of the actual phi for each realization.
+
+
+
+...checking for prior-data conflict
+
+  ---  initial phi summary  ---  
+       phi type           mean            std            min            max
+       measured        16477.9        7852.92        1535.68        35776.7
+         actual        16243.2        7821.92        1285.47        35215.9
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+  ---  observation group phi summary ---  
+       (computed using 'actual' phi)
+           (sorted by mean phi)
+group      count  nconflict      mean       std       min       max   percent       std
+nitrate      121          0  1.11e+04  6.59e+03       188  2.17e+04        66      24.7
+phosphate    121          0  5.19e+03  4.25e+03       131  1.59e+04        34      24.7
+    Note: 'percent' is the percentage of the actual phi for each realization.
+
+
+
+...current lambda: 10
+
+  ---  initialization complete  ---  
+
+  ---  starting solve for iteration: 1  ---  
+...current lambda:  10
+...starting calcs for glm factor 5
+see .log file for more details
+...finished calcs for: 5
+...starting calcs for glm factor 10
+see .log file for more details
+...finished calcs for: 10
+...starting calcs for glm factor 20
+see .log file for more details
+...finished calcs for: 20
+
+  ---  running upgrade ensembles  ---  
+...subset idx:pe real name:  0:0, 26:26, 29:29, 51:51, 101:101, 156:156, 160:160, 199:BASE, 
+...subset idx:oe real name:  0:0, 26:26, 29:29, 51:51, 101:101, 156:156, 160:160, 199:BASE, 
+
+  ---  evaluating upgrade ensembles  ---  
+...last mean:  16477.9
+...last stdev:  7852.92
+
+  ---  phi summary for lambda, scale fac:5 , 0.7 ,   ---  
+       phi type           mean            std            min            max
+       measured        3319.41        2613.44         364.76        8218.18
+         actual        3062.84        2528.57        249.778        7835.32
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+  ---  observation group phi summary ---  
+       (computed using 'actual' phi)
+           (sorted by mean phi)
+group      count  nconflict      mean       std       min       max   percent       std
+nitrate      121          0  1.81e+03  2.54e+03       114  7.72e+03      50.8      27.1
+phosphate    121          0  1.25e+03  1.28e+03       119  3.11e+03      49.2      27.1
+    Note: 'percent' is the percentage of the actual phi for each realization.
+
+
+
+
+  ---  phi summary for lambda, scale fac:5 , 1 ,   ---  
+       phi type           mean            std            min            max
+       measured        2712.15        1419.26           1088        5252.34
+         actual        2489.67        1400.43         884.52        4989.99
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+  ---  observation group phi summary ---  
+       (computed using 'actual' phi)
+           (sorted by mean phi)
+group      count  nconflict      mean       std       min       max   percent       std
+nitrate      121          0  1.97e+03  1.26e+03       479  4.37e+03      76.2      15.6
+phosphate    121          0       524       407       152   1.4e+03      23.8      15.6
+    Note: 'percent' is the percentage of the actual phi for each realization.
+
+
+
+
+  ---  phi summary for lambda, scale fac:10 , 0.7 ,   ---  
+       phi type           mean            std            min            max
+       measured        3417.53        2677.12        379.207         8277.4
+         actual        3159.18        2592.41        234.182         7892.8
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+  ---  observation group phi summary ---  
+       (computed using 'actual' phi)
+           (sorted by mean phi)
+group      count  nconflict      mean       std       min       max   percent       std
+nitrate      121          0  1.86e+03  2.54e+03       109  7.77e+03      51.7      26.4
+phosphate    121          0   1.3e+03  1.37e+03       122  3.41e+03      48.3      26.4
+    Note: 'percent' is the percentage of the actual phi for each realization.
+
+
+
+
+  ---  phi summary for lambda, scale fac:10 , 1 ,   ---  
+       phi type           mean            std            min            max
+       measured        2835.04        1588.59        959.046        5679.06
+         actual        2610.96        1571.74        739.915        5417.69
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+  ---  observation group phi summary ---  
+       (computed using 'actual' phi)
+           (sorted by mean phi)
+group      count  nconflict      mean       std       min       max   percent       std
+nitrate      121          0  2.08e+03  1.34e+03       474  4.56e+03      77.8      13.8
+phosphate    121          0       531       447       145  1.44e+03      22.2      13.8
+    Note: 'percent' is the percentage of the actual phi for each realization.
+
+
+
+
+  ---  phi summary for lambda, scale fac:20 , 0.7 ,   ---  
+       phi type           mean            std            min            max
+       measured        3539.92        2782.18        385.138        8489.68
+         actual        3280.24        2696.46        232.708        8101.35
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+  ---  observation group phi summary ---  
+       (computed using 'actual' phi)
+           (sorted by mean phi)
+group      count  nconflict      mean       std       min       max   percent       std
+nitrate      121          0  1.93e+03   2.6e+03       112  7.98e+03      52.6      25.9
+phosphate    121          0  1.35e+03  1.44e+03       121  3.67e+03      47.4      25.9
+    Note: 'percent' is the percentage of the actual phi for each realization.
+
+
+
+
+  ---  phi summary for lambda, scale fac:20 , 1 ,   ---  
+       phi type           mean            std            min            max
+       measured        2950.24        1745.44        851.445        6059.26
+         actual        2724.94        1731.46        618.576        5800.03
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+  ---  observation group phi summary ---  
+       (computed using 'actual' phi)
+           (sorted by mean phi)
+group      count  nconflict      mean       std       min       max   percent       std
+nitrate      121          0  2.18e+03  1.41e+03       430  4.71e+03      78.9      12.4
+phosphate    121          0       546       497       137  1.48e+03      21.1      12.4
+    Note: 'percent' is the percentage of the actual phi for each realization.
+
+
+
+
+  ---  phi summary for best lambda, scale fac: 5 , 1 ,   ---  
+       phi type           mean            std            min            max
+       measured        2712.15        1419.26           1088        5252.34
+         actual        2489.67        1400.43         884.52        4989.99
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+
+  ---  running remaining realizations for best lambda, scale:5 , 1 ,   ---  
+...phi summary for entire ensemble using lambda,scale_fac 5 , 1 , 
+       phi type           mean            std            min            max
+       measured        2406.27        1527.58        472.648        11058.8
+         actual        2170.99        1524.69        251.373        10766.2
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+...last best mean phi * acceptable phi factor:  17301.8
+...current best mean phi:  2406.27
+
+  ---  updating parameter ensemble  ---  
+
+  ---  updating lambda to  3.75  ---  
+
+  ---  EnsembleMethod iteration 1 report  ---  
+   number of active realizations:  200
+   number of model runs:           440
+      current obs ensemble saved to pest_AN_v1.1.obs.csv
+      current par ensemble saved to pest_AN_v1.1.par.csv
+       phi type           mean            std            min            max
+       measured        2406.27        1527.58        472.648        11058.8
+         actual        2170.99        1524.69        251.373        10766.2
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+  ---  observation group phi summary ---  
+       (computed using 'actual' phi)
+           (sorted by mean phi)
+group      count  nconflict      mean       std       min       max   percent       std
+nitrate      121          0  1.41e+03  1.08e+03       105  6.43e+03        65      24.1
+phosphate    121          0       764  1.02e+03       108  7.25e+03        35      24.1
+    Note: 'percent' is the percentage of the actual phi for each realization.
+
+
+
+
+   ---  parameter group change summmary  ---    
+group   count  mean chg  std chg  n at ubnd  % at ubnd  n at lbnd  % at lbnd  n std decr
+model       5     43.08    44.54          6        0.6          0          0           0
+    Note: parameter change summary sorted according to percent at bounds.
+    Note: the parameter change statistics implicitly include the effect of 
+          realizations that have failed or have been dropped.
+    Note: the 'n std decr' is the number of parameters with current
+          std less 5% of their initial std.
+
+...saved parameter change summary to pest_AN_v1.1.pcs.csv
+
+  ---  phi-based termination criteria check  ---  
+...phiredstp:  0.01
+...nphistp:  3
+...nphinored (also used for consecutive bad lambda cycles):  3
+...best mean phi sequence: 16477.9 , 2406.27 , 
+...best phi yet:  2406.27
+...number of consecutive bad lambda testing cycles:  0
+...number of iterations satisfying phiredstp criteria:  1
+...number of iterations since best yet mean phi:  0
+
+  ---  starting solve for iteration: 2  ---  
+...current lambda:  3.75
+...starting calcs for glm factor 1.875
+see .log file for more details
+...finished calcs for: 1.875
+...starting calcs for glm factor 3.75
+see .log file for more details
+...finished calcs for: 3.75
+...starting calcs for glm factor 7.5
+see .log file for more details
+...finished calcs for: 7.5
+
+  ---  running upgrade ensembles  ---  
+...subset idx:pe real name:  2:29, 7:BASE, 58:54, 75:71, 78:74, 138:135, 142:139, 197:196, 
+...subset idx:oe real name:  2:29, 7:BASE, 58:54, 75:71, 78:74, 138:135, 142:139, 197:196, 
+
+  ---  evaluating upgrade ensembles  ---  
+...last mean:  2406.27
+...last stdev:  1527.58
+
+  ---  phi summary for lambda, scale fac:1.875 , 0.7 ,   ---  
+       phi type           mean            std            min            max
+       measured        817.338        226.009        519.578        1181.71
+         actual            606        195.181        338.706        914.378
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+  ---  observation group phi summary ---  
+       (computed using 'actual' phi)
+           (sorted by mean phi)
+group      count  nconflict      mean       std       min       max   percent       std
+nitrate      121          1       407       188       191       725      65.2      12.8
+phosphate    121          0       199      58.8       113       284      34.8      12.8
+    Note: 'percent' is the percentage of the actual phi for each realization.
+
+
+
+
+  ---  phi summary for lambda, scale fac:1.875 , 1 ,   ---  
+       phi type           mean            std            min            max
+       measured        490.355        123.068        240.452        651.065
+         actual        283.519        62.9857        219.563        408.347
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+  ---  observation group phi summary ---  
+       (computed using 'actual' phi)
+           (sorted by mean phi)
+group      count  nconflict      mean       std       min       max   percent       std
+nitrate      121          0       167        60       111       302      57.8      7.74
+phosphate    121          0       117      19.9       106       165      42.2      7.74
+    Note: 'percent' is the percentage of the actual phi for each realization.
+
+
+
+
+  ---  phi summary for lambda, scale fac:3.75 , 0.7 ,   ---  
+       phi type           mean            std            min            max
+       measured        811.957        217.552        515.852        1154.54
+         actual        599.285        184.401        332.387        887.738
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+  ---  observation group phi summary ---  
+       (computed using 'actual' phi)
+           (sorted by mean phi)
+group      count  nconflict      mean       std       min       max   percent       std
+nitrate      121          1       403       177       204       705      65.4        12
+phosphate    121          0       197      56.4       112       275      34.6        12
+    Note: 'percent' is the percentage of the actual phi for each realization.
+
+
+
+
+  ---  phi summary for lambda, scale fac:3.75 , 1 ,   ---  
+       phi type           mean            std            min            max
+       measured        493.274        123.852        243.418         651.38
+         actual        284.436        62.7389        225.529        408.576
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+  ---  observation group phi summary ---  
+       (computed using 'actual' phi)
+           (sorted by mean phi)
+group      count  nconflict      mean       std       min       max   percent       std
+nitrate      121          0       168      60.4       115       301      57.8      7.98
+phosphate    121          0       117      20.1       107       166      42.2      7.98
+    Note: 'percent' is the percentage of the actual phi for each realization.
+
+
+
+
+  ---  phi summary for lambda, scale fac:7.5 , 0.7 ,   ---  
+       phi type           mean            std            min            max
+       measured        813.413         207.29        520.218           1121
+         actual        599.485        171.709        333.345        854.291
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+  ---  observation group phi summary ---  
+       (computed using 'actual' phi)
+           (sorted by mean phi)
+group      count  nconflict      mean       std       min       max   percent       std
+nitrate      121          1       403       164       221       675      65.7      11.2
+phosphate    121          0       197      55.8       112       272      34.3      11.2
+    Note: 'percent' is the percentage of the actual phi for each realization.
+
+
+
+
+  ---  phi summary for lambda, scale fac:7.5 , 1 ,   ---  
+       phi type           mean            std            min            max
+       measured         501.09        125.822        249.113        648.461
+         actual        290.217        62.3884        226.457        404.749
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+  ---  observation group phi summary ---  
+       (computed using 'actual' phi)
+           (sorted by mean phi)
+group      count  nconflict      mean       std       min       max   percent       std
+nitrate      121          0       173      60.2       120       297      58.4      8.03
+phosphate    121          0       118      20.8       107       168      41.6      8.03
+    Note: 'percent' is the percentage of the actual phi for each realization.
+
+
+
+
+  ---  phi summary for best lambda, scale fac: 1.875 , 1 ,   ---  
+       phi type           mean            std            min            max
+       measured        490.355        123.068        240.452        651.065
+         actual        283.519        62.9857        219.563        408.347
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+
+  ---  running remaining realizations for best lambda, scale:1.875 , 1 ,   ---  
+...phi summary for entire ensemble using lambda,scale_fac 1.875 , 1 , 
+       phi type           mean            std            min            max
+       measured        573.488        182.846        240.452        1556.74
+         actual        342.694        174.291        200.053        1361.43
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+...last best mean phi * acceptable phi factor:  2526.59
+...current best mean phi:  573.488
+
+  ---  updating parameter ensemble  ---  
+
+  ---  updating lambda to  1.40625  ---  
+
+  ---  EnsembleMethod iteration 2 report  ---  
+   number of active realizations:  200
+   number of model runs:           680
+      current obs ensemble saved to pest_AN_v1.2.obs.csv
+      current par ensemble saved to pest_AN_v1.2.par.csv
+       phi type           mean            std            min            max
+       measured        573.488        182.846        240.452        1556.74
+         actual        342.694        174.291        200.053        1361.43
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+  ---  observation group phi summary ---  
+       (computed using 'actual' phi)
+           (sorted by mean phi)
+group      count  nconflict      mean       std       min       max   percent       std
+nitrate      121          0       193       165        92  1.23e+03        53      13.5
+phosphate    121          0       150        67       106       511        47      13.5
+    Note: 'percent' is the percentage of the actual phi for each realization.
+
+
+
+
+   ---  parameter group change summmary  ---    
+group   count  mean chg  std chg  n at ubnd  % at ubnd  n at lbnd  % at lbnd  n std decr
+model       5     47.46    79.29          0          0          0          0           0
+    Note: parameter change summary sorted according to percent at bounds.
+    Note: the parameter change statistics implicitly include the effect of 
+          realizations that have failed or have been dropped.
+    Note: the 'n std decr' is the number of parameters with current
+          std less 5% of their initial std.
+
+...saved parameter change summary to pest_AN_v1.2.pcs.csv
+
+  ---  phi-based termination criteria check  ---  
+...phiredstp:  0.01
+...nphistp:  3
+...nphinored (also used for consecutive bad lambda cycles):  3
+...best mean phi sequence: 16477.9 , 2406.27 , 573.488 , 
+...best phi yet:  573.488
+...number of consecutive bad lambda testing cycles:  0
+...number of iterations satisfying phiredstp criteria:  1
+...number of iterations since best yet mean phi:  0
+
+  ---  starting solve for iteration: 3  ---  
+...current lambda:  1.40625
+...starting calcs for glm factor 0.703125
+see .log file for more details
+...finished calcs for: 0.703125
+...starting calcs for glm factor 1.40625
+see .log file for more details
+...finished calcs for: 1.40625
+...starting calcs for glm factor 2.8125
+see .log file for more details
+...finished calcs for: 2.8125
+
+  ---  running upgrade ensembles  ---  
+...subset idx:pe real name:  0:29, 1:BASE, 7:196, 80:72, 87:80, 90:83, 118:112, 183:181, 
+...subset idx:oe real name:  0:29, 1:BASE, 7:196, 80:72, 87:80, 90:83, 118:112, 183:181, 
+
+  ---  evaluating upgrade ensembles  ---  
+...last mean:  573.488
+...last stdev:  182.846
+
+  ---  phi summary for lambda, scale fac:0.703125 , 0.7 ,   ---  
+       phi type           mean            std            min            max
+       measured        445.159        124.296        202.304        645.072
+         actual        233.494         52.303        199.604        355.396
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+  ---  observation group phi summary ---  
+       (computed using 'actual' phi)
+           (sorted by mean phi)
+group      count  nconflict      mean       std       min       max   percent       std
+nitrate      121          0       126      52.3      93.4       249      52.3      7.85
+phosphate    121          0       108      3.03       106       115      47.7      7.85
+    Note: 'percent' is the percentage of the actual phi for each realization.
+
+
+
+
+  ---  phi summary for lambda, scale fac:0.703125 , 1 ,   ---  
+       phi type           mean            std            min            max
+       measured        414.319        93.8559        200.149        497.548
+         actual        204.695        6.80743        198.275        216.772
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+  ---  observation group phi summary ---  
+       (computed using 'actual' phi)
+           (sorted by mean phi)
+group      count  nconflict      mean       std       min       max   percent       std
+phosphate    121          0       108      2.41       106       113      52.6      1.25
+nitrate      121          0      97.2      5.46      92.4       107      47.4      1.25
+    Note: 'percent' is the percentage of the actual phi for each realization.
+
+
+
+
+  ---  phi summary for lambda, scale fac:1.40625 , 0.7 ,   ---  
+       phi type           mean            std            min            max
+       measured        447.702        127.764        202.963        660.009
+         actual        235.911        56.7457        199.868        368.954
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+  ---  observation group phi summary ---  
+       (computed using 'actual' phi)
+           (sorted by mean phi)
+group      count  nconflict      mean       std       min       max   percent       std
+nitrate      121          0       128      56.8      93.6       262      52.6      8.18
+phosphate    121          0       108      3.28       106       116      47.4      8.18
+    Note: 'percent' is the percentage of the actual phi for each realization.
+
+
+
+
+  ---  phi summary for lambda, scale fac:1.40625 , 1 ,   ---  
+       phi type           mean            std            min            max
+       measured        414.705        94.1687        200.139        498.156
+         actual          204.9        6.59616        198.479        216.535
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+  ---  observation group phi summary ---  
+       (computed using 'actual' phi)
+           (sorted by mean phi)
+group      count  nconflict      mean       std       min       max   percent       std
+phosphate    121          0       107       1.9       106       112      52.4      1.28
+nitrate      121          0      97.5      5.58      92.6       107      47.6      1.28
+    Note: 'percent' is the percentage of the actual phi for each realization.
+
+
+
+
+  ---  phi summary for lambda, scale fac:2.8125 , 0.7 ,   ---  
+       phi type           mean            std            min            max
+       measured        452.435        133.997        204.245        685.962
+         actual        240.456        64.5678        200.337        392.711
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+  ---  observation group phi summary ---  
+       (computed using 'actual' phi)
+           (sorted by mean phi)
+group      count  nconflict      mean       std       min       max   percent       std
+nitrate      121          0       132      64.6      93.9       286        53       8.7
+phosphate    121          0       108      3.72       106       117        47       8.7
+    Note: 'percent' is the percentage of the actual phi for each realization.
+
+
+
+
+  ---  phi summary for lambda, scale fac:2.8125 , 1 ,   ---  
+       phi type           mean            std            min            max
+       measured        416.155        95.0666        200.345        499.887
+         actual        206.082        6.86284        198.881        217.105
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+  ---  observation group phi summary ---  
+       (computed using 'actual' phi)
+           (sorted by mean phi)
+group      count  nconflict      mean       std       min       max   percent       std
+phosphate    121          0       107      1.42       106       109      52.1      1.54
+nitrate      121          0      98.9      6.38      92.9       108      47.9      1.54
+    Note: 'percent' is the percentage of the actual phi for each realization.
+
+
+
+
+  ---  phi summary for best lambda, scale fac: 0.703125 , 1 ,   ---  
+       phi type           mean            std            min            max
+       measured        414.319        93.8559        200.149        497.548
+         actual        204.695        6.80743        198.275        216.772
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+
+  ---  running remaining realizations for best lambda, scale:0.703125 , 1 ,   ---  
+...phi summary for entire ensemble using lambda,scale_fac 0.703125 , 1 , 
+       phi type           mean            std            min            max
+       measured        441.463        47.7337        200.149        796.717
+         actual        212.064        26.1996        197.673        493.095
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+...last best mean phi * acceptable phi factor:  602.162
+...current best mean phi:  441.463
+
+  ---  updating parameter ensemble  ---  
+
+  ---  updating lambda to  0.527344  ---  
+
+  ---  EnsembleMethod iteration 3 report  ---  
+   number of active realizations:  200
+   number of model runs:           920
+      current obs ensemble saved to pest_AN_v1.3.obs.csv
+      current par ensemble saved to pest_AN_v1.3.par.csv
+       phi type           mean            std            min            max
+       measured        441.463        47.7337        200.149        796.717
+         actual        212.064        26.1996        197.673        493.095
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+  ---  observation group phi summary ---  
+       (computed using 'actual' phi)
+           (sorted by mean phi)
+group      count  nconflict      mean       std       min       max   percent       std
+phosphate    121          0       111      8.16       106       166      52.5      3.85
+nitrate      121          0       101      25.1      91.6       386      47.5      3.85
+    Note: 'percent' is the percentage of the actual phi for each realization.
+
+
+
+
+   ---  parameter group change summmary  ---    
+group   count  mean chg  std chg  n at ubnd  % at ubnd  n at lbnd  % at lbnd  n std decr
+model       5     51.23    90.52          0          0          0          0           0
+    Note: parameter change summary sorted according to percent at bounds.
+    Note: the parameter change statistics implicitly include the effect of 
+          realizations that have failed or have been dropped.
+    Note: the 'n std decr' is the number of parameters with current
+          std less 5% of their initial std.
+
+...saved parameter change summary to pest_AN_v1.3.pcs.csv
+
+  ---  phi-based termination criteria check  ---  
+...phiredstp:  0.01
+...nphistp:  3
+...nphinored (also used for consecutive bad lambda cycles):  3
+...best mean phi sequence: 16477.9 , 2406.27 , 573.488 , 441.463 , 
+...best phi yet:  441.463
+...number of consecutive bad lambda testing cycles:  0
+...number of iterations satisfying phiredstp criteria:  1
+...number of iterations since best yet mean phi:  0
+
+  ---  starting solve for iteration: 4  ---  
+...current lambda:  0.527344
+...starting calcs for glm factor 0.263672
+see .log file for more details
+...finished calcs for: 0.263672
+...starting calcs for glm factor 0.527344
+see .log file for more details
+...finished calcs for: 0.527344
+...starting calcs for glm factor 1.05469
+see .log file for more details
+...finished calcs for: 1.05469
+
+  ---  running upgrade ensembles  ---  
+...subset idx:pe real name:  1:BASE, 2:196, 24:6, 26:8, 47:31, 68:53, 97:88, 135:128, 
+...subset idx:oe real name:  1:BASE, 2:196, 24:6, 26:8, 47:31, 68:53, 97:88, 135:128, 
+
+  ---  evaluating upgrade ensembles  ---  
+...last mean:  441.463
+...last stdev:  47.7337
+
+  ---  phi summary for lambda, scale fac:0.263672 , 0.7 ,   ---  
+       phi type           mean            std            min            max
+       measured        417.213        92.2902        197.996        482.728
+         actual        204.275        4.15856        197.996        210.544
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+  ---  observation group phi summary ---  
+       (computed using 'actual' phi)
+           (sorted by mean phi)
+group      count  nconflict      mean       std       min       max   percent       std
+phosphate    121          0       110      2.86       106       114      53.7     0.841
+nitrate      121          1      94.6      2.56      91.9        98      46.3     0.841
+    Note: 'percent' is the percentage of the actual phi for each realization.
+
+
+
+
+  ---  phi summary for lambda, scale fac:0.263672 , 1 ,   ---  
+       phi type           mean            std            min            max
+       measured        416.589        92.2627        197.644        481.686
+         actual        203.458        3.84526        197.644        208.023
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+  ---  observation group phi summary ---  
+       (computed using 'actual' phi)
+           (sorted by mean phi)
+group      count  nconflict      mean       std       min       max   percent       std
+phosphate    121          0       109      2.62       106       114      53.7     0.859
+nitrate      121          1      94.1       2.6      91.6      98.1      46.3     0.859
+    Note: 'percent' is the percentage of the actual phi for each realization.
+
+
+
+
+  ---  phi summary for lambda, scale fac:0.527344 , 0.7 ,   ---  
+       phi type           mean            std            min            max
+       measured        417.322        92.3028        198.052        482.952
+         actual        204.378        4.24217        198.052        210.996
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+  ---  observation group phi summary ---  
+       (computed using 'actual' phi)
+           (sorted by mean phi)
+group      count  nconflict      mean       std       min       max   percent       std
+phosphate    121          0       110      2.93       106       114      53.7     0.847
+nitrate      121          1      94.7      2.57      91.9        98      46.3     0.847
+    Note: 'percent' is the percentage of the actual phi for each realization.
+
+
+
+
+  ---  phi summary for lambda, scale fac:0.527344 , 1 ,   ---  
+       phi type           mean            std            min            max
+       measured        416.666        92.2566        197.685        481.704
+         actual        203.527         3.8923        197.685         208.04
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+  ---  observation group phi summary ---  
+       (computed using 'actual' phi)
+           (sorted by mean phi)
+group      count  nconflict      mean       std       min       max   percent       std
+phosphate    121          0       109      2.63       106       114      53.7     0.838
+nitrate      121          1      94.2      2.57      91.7      98.1      46.3     0.838
+    Note: 'percent' is the percentage of the actual phi for each realization.
+
+
+
+
+  ---  phi summary for lambda, scale fac:1.05469 , 0.7 ,   ---  
+       phi type           mean            std            min            max
+       measured         417.52        92.3296        198.152         483.39
+         actual        204.575        4.40797        198.152        211.813
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+  ---  observation group phi summary ---  
+       (computed using 'actual' phi)
+           (sorted by mean phi)
+group      count  nconflict      mean       std       min       max   percent       std
+phosphate    121          0       110      3.07       106       114      53.7     0.869
+nitrate      121          1      94.7      2.61        92        98      46.3     0.869
+    Note: 'percent' is the percentage of the actual phi for each realization.
+
+
+
+
+  ---  phi summary for lambda, scale fac:1.05469 , 1 ,   ---  
+       phi type           mean            std            min            max
+       measured        416.821        92.2528        197.761        481.807
+         actual         203.68        3.99507        197.761         208.74
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+  ---  observation group phi summary ---  
+       (computed using 'actual' phi)
+           (sorted by mean phi)
+group      count  nconflict      mean       std       min       max   percent       std
+phosphate    121          0       109      2.68       106       114      53.7     0.808
+nitrate      121          1      94.2      2.52      91.7        98      46.3     0.808
+    Note: 'percent' is the percentage of the actual phi for each realization.
+
+
+
+
+  ---  phi summary for best lambda, scale fac: 0.263672 , 1 ,   ---  
+       phi type           mean            std            min            max
+       measured        416.589        92.2627        197.644        481.686
+         actual        203.458        3.84526        197.644        208.023
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+
+  ---  running remaining realizations for best lambda, scale:0.263672 , 1 ,   ---  
+...phi summary for entire ensemble using lambda,scale_fac 0.263672 , 1 , 
+       phi type           mean            std            min            max
+       measured        433.387        39.0448        197.644        524.894
+         actual        203.338        4.25636        197.644        229.925
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+
+...last best mean phi * acceptable phi factor:  463.536
+...current best mean phi:  433.387
+
+  ---  updating parameter ensemble  ---  
+
+  ---  updating lambda to  0.197754  ---  
+
+  ---  EnsembleMethod iteration 4 report  ---  
+   number of active realizations:  200
+   number of model runs:           1160
+      current obs ensemble saved to pest_AN_v1.4.obs.csv
+      current par ensemble saved to pest_AN_v1.4.par.csv
+       phi type           mean            std            min            max
+       measured        433.387        39.0448        197.644        524.894
+         actual        203.338        4.25636        197.644        229.925
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+  ---  observation group phi summary ---  
+       (computed using 'actual' phi)
+           (sorted by mean phi)
+group      count  nconflict      mean       std       min       max   percent       std
+phosphate    121          0       108      2.72       106       119      53.4      1.01
+nitrate      121          0      94.9      3.23      91.6       116      46.6      1.01
+    Note: 'percent' is the percentage of the actual phi for each realization.
+
+
+
+
+   ---  parameter group change summmary  ---    
+group   count  mean chg  std chg  n at ubnd  % at ubnd  n at lbnd  % at lbnd  n std decr
+model       5     51.81    92.52          0          0          0          0           0
+    Note: parameter change summary sorted according to percent at bounds.
+    Note: the parameter change statistics implicitly include the effect of 
+          realizations that have failed or have been dropped.
+    Note: the 'n std decr' is the number of parameters with current
+          std less 5% of their initial std.
+
+...saved parameter change summary to pest_AN_v1.4.pcs.csv
+
+  ---  phi-based termination criteria check  ---  
+...phiredstp:  0.01
+...nphistp:  3
+...nphinored (also used for consecutive bad lambda cycles):  3
+...best mean phi sequence: 16477.9 , 2406.27 , 573.488 , 441.463 , 433.387 , 
+...best phi yet:  433.387
+...number of consecutive bad lambda testing cycles:  0
+...number of iterations satisfying phiredstp criteria:  1
+...number of iterations since best yet mean phi:  0
+
+
+pestpp-ies analysis complete...
+started at 11/22/26 22:30:38
+finished at 11/22/26 22:37:09
+took 6.51667 minutes

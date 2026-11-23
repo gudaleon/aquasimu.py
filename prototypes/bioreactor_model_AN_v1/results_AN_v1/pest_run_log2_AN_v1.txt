@@ -1,0 +1,623 @@
+
+
+             pestpp-ies: a GLM iterative ensemble smoother
+
+                   by the PEST++ development team
+
+
+version: 5.2.16
+binary compiled on Dec  1 2024 at 10:51:08
+
+started at 11/22/26 22:30:38
+...processing command line: ' /workspace/pestpp_bin_AN/bin/pestpp-ies pest_AN_v1.pst /h :4004'
+...using panther run manager in master mode using port 4004
+
+using control file: "pest_AN_v1.pst"
+in directory: "/workspace/bioreactor_model_AN_v1/pest_AN_v1/run_ies"
+on host: "grok-bot-vm-454799141"
+
+processing control file pest_AN_v1.pst
+Note: 3 unused lines in pest control file, see rec file...
+
+
+:~-._                                                 _.-~:
+: :.~^o._        ________---------________        _.o^~.:.:
+ : ::.`?88booo~~~.::::::::...::::::::::::..~~oood88P'.::.:
+ :  ::: `?88P .:::....         ........:::::. ?88P' :::. :
+  :  :::. `? .::.            . ...........:::. P' .:::. :
+   :  :::   ... ..  ...       .. .::::......::.   :::. :
+   `  :' .... ..  .:::::.     . ..:::::::....:::.  `: .'
+    :..    ____:::::::::.  . . ....:::::::::____  ... :
+   :... `:~    ^~-:::::..  .........:::::-~^    ~::.::::
+   `.::. `\   (8)  \b:::..::.:.:::::::d/  (8)   /'.::::'
+    ::::.  ~-._v    |b.::::::::::::::d|    v_.-~..:::::
+    `.:::::... ~~^?888b..:::::::::::d888P^~...::::::::'
+     `.::::::::::....~~~ .:::::::::~~~:::::::::::::::'
+      `..:::::::::::   .   ....::::    ::::::::::::,'
+        `. .:::::::    .      .::::.    ::::::::'.'
+          `._ .:::    .        :::::.    :::::_.'
+             `-. :    .        :::::      :,-'
+                :.   :___     .:::___   .::
+      ..--~~~~--:+::. ~~^?b..:::dP^~~.::++:--~~~~--..
+        ___....--`+:::.    `~8~'    .:::+'--....___
+      ~~   __..---`_=:: ___gd8bg___ :==_'---..__   ~~
+       -~~~  _.--~~`-.~~~~~~~~~~~~~~~,-' ~~--._ ~~~-
+
+
+               starting PANTHER master...
+
+IP addresses:
+  0.0.0.0:4004 (IPv4)
+
+PANTHER master listening on socket: 0.0.0.0:4004 (IPv4)
+
+  ---  initializing  ---  
+...using glm algorithm
+...using REDSVD for truncated svd solve
+...maxsing: 10000000
+...eigthresh:  1e-06
+...initializing localizer
+...not using localization
+...using lambda multipliers: 0.5 , 1 , 2 , 
+...using lambda scaling factors: 0.7 , 1 , 
+...acceptable phi factor:  1.05
+...lambda increase factor:  10
+...lambda decrease factor:  0.75
+...max run fail:  3
+
+  ---  sanity_check warnings  ---  
+...noptmax > 3, this is a lot of iterations for an ensemble method...
+...continuing initialization...
+...initializing prior parameter covariance matrix
+...parcov loaded  from parameter bounds, using par_sigma_range 4
+...initializing observation noise covariance matrix
+...obscov loaded  from observation weights
+...using reg_factor:  0
+...drawing parameter realizations:  200
+...not using prior parameter covariance matrix scaling
+...drawing observation noise realizations:  200
+...setting weights ensemble from control file weights
+...saved weight ensemble to  pest_AN_v1.weights.csv
+...adding 'base' parameter values to ensemble
+...adding 'base' observation values to ensemble
+...adding 'base' weight values to weight ensemble
+...saved initial parameter ensemble to  pest_AN_v1.0.par.csv
+...saved obs+noise observation ensemble (obsval + noise realizations) to  pest_AN_v1.obs+noise.csv
+...using subset in lambda testing, number of realizations used in subset testing:  8
+...subset how:  RANDOM
+...centering on ensemble mean vector
+...running initial ensemble of size 200
+    running model 200 times
+    starting at 11/22/26 22:30:38
+
+    waiting for agents to appear...
+
+
+PANTHER progress
+   avg = average model run time in minutes
+   runs(C = completed | F = failed | T = timed out)
+   agents(R = running | W = waiting | U = unavailable)
+--------------------------------------------------------------------------------
+11/22 22:30:39 mn:0     runs(C0    |F0    |T0    ) agents(R0   |W0   |U8   ) 0  11/22 22:30:40 mn:0     runs(C0    |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:30:41 mn:0     runs(C0    |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:30:42 mn:0.045 runs(C6    |F0    |T0    ) agents(R5   |W2   |U1   ) 0  11/22 22:30:43 mn:0.046 runs(C8    |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:30:44 mn:0.046 runs(C8    |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:30:45 mn:0.047 runs(C16   |F0    |T0    ) agents(R7   |W0   |U1   ) 0  11/22 22:30:46 mn:0.047 runs(C16   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:30:47 mn:0.047 runs(C17   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:30:48 mn:0.046 runs(C24   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:30:49 mn:0.046 runs(C25   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:30:50 mn:0.045 runs(C26   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:30:51 mn:0.045 runs(C32   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:30:52 mn:0.044 runs(C33   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:30:53 mn:0.044 runs(C37   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:30:54 mn:0.043 runs(C41   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:30:55 mn:0.043 runs(C43   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:30:56 mn:0.042 runs(C49   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:30:57 mn:0.042 runs(C50   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:30:58 mn:0.042 runs(C53   |F0    |T0    ) agents(R7   |W0   |U1   ) 0  11/22 22:30:59 mn:0.042 runs(C58   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:31:00 mn:0.041 runs(C59   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:31:01 mn:0.041 runs(C65   |F0    |T0    ) agents(R7   |W0   |U1   ) 0  11/22 22:31:02 mn:0.041 runs(C67   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:31:03 mn:0.041 runs(C68   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:31:04 mn:0.041 runs(C75   |F0    |T0    ) agents(R7   |W0   |U1   ) 0  11/22 22:31:05 mn:0.041 runs(C76   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:31:06 mn:0.041 runs(C78   |F0    |T0    ) agents(R7   |W0   |U1   ) 0  11/22 22:31:07 mn:0.042 runs(C84   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:31:08 mn:0.042 runs(C84   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:31:09 mn:0.042 runs(C90   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:31:10 mn:0.042 runs(C92   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:31:11 mn:0.042 runs(C93   |F0    |T0    ) agents(R7   |W0   |U1   ) 0  11/22 22:31:12 mn:0.042 runs(C100  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:31:13 mn:0.042 runs(C100  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:31:14 mn:0.043 runs(C105  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:31:15 mn:0.043 runs(C108  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:31:16 mn:0.043 runs(C108  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:31:17 mn:0.043 runs(C116  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:31:18 mn:0.043 runs(C116  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:31:19 mn:0.043 runs(C118  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:31:20 mn:0.043 runs(C124  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:31:21 mn:0.043 runs(C125  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:31:22 mn:0.042 runs(C132  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:31:23 mn:0.042 runs(C132  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:31:24 mn:0.042 runs(C134  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:31:25 mn:0.041 runs(C141  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:31:26 mn:0.041 runs(C142  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:31:27 mn:0.041 runs(C148  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:31:28 mn:0.041 runs(C150  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:31:29 mn:0.041 runs(C150  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:31:30 mn:0.042 runs(C158  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:31:31 mn:0.042 runs(C158  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:31:32 mn:0.042 runs(C158  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:31:33 mn:0.044 runs(C166  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:31:34 mn:0.044 runs(C166  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:31:35 mn:0.043 runs(C170  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:31:36 mn:0.044 runs(C174  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:31:37 mn:0.044 runs(C174  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:31:38 mn:0.043 runs(C182  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:31:39 mn:0.043 runs(C182  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:31:40 mn:0.043 runs(C183  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:31:41 mn:0.043 runs(C190  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:31:42 mn:0.042 runs(C191  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:31:43 mn:0.043 runs(C198  |F0    |T0    ) agents(R2   |W6   |U0   ) 0  11/22 22:31:44 mn:0.043 runs(C199  |F0    |T0    ) agents(R1   |W7   |U0   ) 0  11/22 22:31:45 remaining file transfers: 0                                       
+
+   200 runs complete :  0 runs failed
+   0.0423 avg run time (min) : 1.11 run mgr time (min)
+   8 agents connected
+
+
+...saved initial obs ensemble to pest_AN_v1.0.obs.csv
+saved par and rei files for realization BASE for iteration 0
+saved par and rei files for realization BASE
+
+  ---  pre-drop initial phi summary  ---  
+       phi type           mean            std            min            max
+       measured        16477.9        7852.92        1535.68        35776.7
+         actual        16243.2        7821.92        1285.47        35215.9
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+  ---  observation group phi summary ---  
+       (computed using 'actual' phi)
+           (sorted by mean phi)
+group      count  nconflict      mean       std       min       max   percent       std
+nitrate      121          0  1.11e+04  6.59e+03       188  2.17e+04        66      24.7
+phosphate    121          0  5.19e+03  4.25e+03       131  1.59e+04        34      24.7
+    Note: 'percent' is the percentage of the actual phi for each realization.
+
+...checking for prior-data conflict
+
+  ---  initial phi summary  ---  
+       phi type           mean            std            min            max
+       measured        16477.9        7852.92        1535.68        35776.7
+         actual        16243.2        7821.92        1285.47        35215.9
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+  ---  observation group phi summary ---  
+       (computed using 'actual' phi)
+           (sorted by mean phi)
+group      count  nconflict      mean       std       min       max   percent       std
+nitrate      121          0  1.11e+04  6.59e+03       188  2.17e+04        66      24.7
+phosphate    121          0  5.19e+03  4.25e+03       131  1.59e+04        34      24.7
+    Note: 'percent' is the percentage of the actual phi for each realization.
+
+...current lambda: 10
+
+  ---  initialization complete  ---  
+
+  ---  starting solve for iteration: 1  ---  
+...current lambda:  10
+...starting calcs for glm factor 5
+...finished calcs for: 5
+...starting calcs for glm factor 10
+...finished calcs for: 10
+...starting calcs for glm factor 20
+...finished calcs for: 20
+
+  ---  running upgrade ensembles  ---  
+...subset idx:pe real name:  0:0, 26:26, 29:29, 51:51, 101:101, 156:156, 160:160, 199:BASE, 
+...subset idx:oe real name:  0:0, 26:26, 29:29, 51:51, 101:101, 156:156, 160:160, 199:BASE, 
+    running model 48 times
+    starting at 11/22/26 22:31:45
+    8 agents ready
+
+
+PANTHER progress
+   avg = average model run time in minutes
+   runs(C = completed | F = failed | T = timed out)
+   agents(R = running | W = waiting | U = unavailable)
+--------------------------------------------------------------------------------
+11/22 22:31:46 mn:0     runs(C0    |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:31:47 mn:0     runs(C0    |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:31:48 mn:0.043 runs(C8    |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:31:49 mn:0.043 runs(C8    |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:31:50 mn:0.043 runs(C9    |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:31:51 mn:0.044 runs(C16   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:31:52 mn:0.044 runs(C16   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:31:53 mn:0.043 runs(C24   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:31:54 mn:0.043 runs(C24   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:31:55 mn:0.043 runs(C25   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:31:56 mn:0.043 runs(C32   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:31:57 mn:0.043 runs(C32   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:31:58 mn:0.043 runs(C37   |F0    |T0    ) agents(R5   |W1   |U2   ) 0  11/22 22:31:59 mn:0.043 runs(C40   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:32:00 mn:0.042 runs(C41   |F0    |T0    ) agents(R7   |W1   |U0   ) 0  11/22 22:32:00 remaining file transfers: 0                                       
+
+   48 runs complete :  0 runs failed
+   0.0418 avg run time (min) : 0.262 run mgr time (min)
+   8 agents connected
+
+
+
+  ---  evaluating upgrade ensembles  ---  
+...last mean:  16477.9
+...last stdev:  7852.92
+
+  ---  phi summary for best lambda, scale fac: 5 , 1 ,   ---  
+       phi type           mean            std            min            max
+       measured        2712.15        1419.26           1088        5252.34
+         actual        2489.67        1400.43         884.52        4989.99
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+  ---  running remaining realizations for best lambda, scale:5 , 1 ,   ---  
+    running model 192 times
+    starting at 11/22/26 22:32:00
+    8 agents ready
+
+
+PANTHER progress
+   avg = average model run time in minutes
+   runs(C = completed | F = failed | T = timed out)
+   agents(R = running | W = waiting | U = unavailable)
+--------------------------------------------------------------------------------
+11/22 22:32:01 mn:0     runs(C0    |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:32:02 mn:0     runs(C0    |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:32:03 mn:0.042 runs(C8    |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:32:04 mn:0.042 runs(C8    |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:32:05 mn:0.042 runs(C8    |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:32:06 mn:0.043 runs(C16   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:32:07 mn:0.043 runs(C16   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:32:08 mn:0.043 runs(C22   |F0    |T0    ) agents(R7   |W0   |U1   ) 0  11/22 22:32:09 mn:0.044 runs(C24   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:32:10 mn:0.044 runs(C24   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:32:11 mn:0.044 runs(C32   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:32:12 mn:0.044 runs(C32   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:32:13 mn:0.042 runs(C39   |F0    |T0    ) agents(R3   |W1   |U4   ) 0  11/22 22:32:14 mn:0.042 runs(C40   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:32:15 mn:0.042 runs(C42   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:32:16 mn:0.042 runs(C48   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:32:17 mn:0.041 runs(C50   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:32:18 mn:0.041 runs(C50   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:32:19 mn:0.042 runs(C57   |F0    |T0    ) agents(R7   |W0   |U1   ) 0  11/22 22:32:20 mn:0.042 runs(C58   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:32:21 mn:0.042 runs(C62   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:32:23 mn:0.043 runs(C66   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:32:24 mn:0.043 runs(C66   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:32:25 mn:0.044 runs(C71   |F0    |T0    ) agents(R7   |W0   |U1   ) 0  11/22 22:32:26 mn:0.045 runs(C74   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:32:27 mn:0.045 runs(C74   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:32:28 mn:0.045 runs(C82   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:32:29 mn:0.045 runs(C82   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:32:30 mn:0.045 runs(C84   |F0    |T0    ) agents(R7   |W0   |U1   ) 0  11/22 22:32:31 mn:0.045 runs(C90   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:32:32 mn:0.045 runs(C90   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:32:33 mn:0.045 runs(C92   |F0    |T0    ) agents(R7   |W0   |U1   ) 0  11/22 22:32:34 mn:0.046 runs(C98   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:32:35 mn:0.046 runs(C98   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:32:36 mn:0.046 runs(C105  |F0    |T0    ) agents(R7   |W0   |U1   ) 0  11/22 22:32:37 mn:0.046 runs(C106  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:32:38 mn:0.046 runs(C106  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:32:39 mn:0.045 runs(C114  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:32:40 mn:0.045 runs(C114  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:32:41 mn:0.045 runs(C115  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:32:42 mn:0.046 runs(C122  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:32:43 mn:0.046 runs(C122  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:32:44 mn:0.046 runs(C125  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:32:45 mn:0.045 runs(C130  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:32:46 mn:0.045 runs(C131  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:32:47 mn:0.044 runs(C138  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:32:48 mn:0.044 runs(C139  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:32:49 mn:0.044 runs(C139  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:32:50 mn:0.044 runs(C147  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:32:51 mn:0.044 runs(C147  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:32:52 mn:0.044 runs(C148  |F0    |T0    ) agents(R7   |W0   |U1   ) 0  11/22 22:32:53 mn:0.045 runs(C155  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:32:54 mn:0.045 runs(C155  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:32:55 mn:0.045 runs(C158  |F0    |T0    ) agents(R7   |W0   |U1   ) 0  11/22 22:32:56 mn:0.046 runs(C163  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:32:57 mn:0.046 runs(C163  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:32:58 mn:0.047 runs(C169  |F0    |T0    ) agents(R7   |W0   |U1   ) 0  11/22 22:32:59 mn:0.046 runs(C171  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:33:00 mn:0.046 runs(C172  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:33:01 mn:0.044 runs(C179  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:33:02 mn:0.044 runs(C180  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:33:03 mn:0.044 runs(C182  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:33:04 mn:0.043 runs(C188  |F0    |T0    ) agents(R4   |W4   |U0   ) 0  11/22 22:33:05 mn:0.043 runs(C189  |F0    |T0    ) agents(R3   |W5   |U0   ) 0  11/22 22:33:05 remaining file transfers: 0                                       
+
+   192 runs complete :  0 runs failed
+   0.0419 avg run time (min) : 1.08 run mgr time (min)
+   8 agents connected
+
+
+...phi summary for entire ensemble using lambda,scale_fac 5 , 1 , 
+       phi type           mean            std            min            max
+       measured        2406.27        1527.58        472.648        11058.8
+         actual        2170.99        1524.69        251.373        10766.2
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+...last best mean phi * acceptable phi factor:  17301.8
+...current best mean phi:  2406.27
+
+  ---  updating parameter ensemble  ---  
+
+  ---  updating lambda to  3.75  ---  
+
+  ---  EnsembleMethod iteration 1 report  ---  
+   number of active realizations:   200
+   number of model runs:            440
+      current obs ensemble saved to pest_AN_v1.1.obs.csv
+      current par ensemble saved to pest_AN_v1.1.par.csv
+saved par and rei files for realization BASE for iteration 1
+saved par and rei files for realization BASE
+       phi type           mean            std            min            max
+       measured        2406.27        1527.58        472.648        11058.8
+         actual        2170.99        1524.69        251.373        10766.2
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+  ---  observation group phi summary ---  
+       (computed using 'actual' phi)
+           (sorted by mean phi)
+group      count  nconflict      mean       std       min       max   percent       std
+nitrate      121          0  1.41e+03  1.08e+03       105  6.43e+03        65      24.1
+phosphate    121          0       764  1.02e+03       108  7.25e+03        35      24.1
+    Note: 'percent' is the percentage of the actual phi for each realization.
+
+
+   ---  parameter group change summmary  ---    
+group   count  mean chg  std chg  n at ubnd  % at ubnd  n at lbnd  % at lbnd  n std decr
+model       5     43.08    44.54          6        0.6          0          0           0
+    Note: parameter change summary sorted according to percent at bounds.
+    Note: the parameter change statistics implicitly include the effect of 
+          realizations that have failed or have been dropped.
+    Note: the 'n std decr' is the number of parameters with current
+          std less 5% of their initial std.
+
+...saved parameter change summary to pest_AN_v1.1.pcs.csv
+
+  ---  phi-based termination criteria check  ---  
+...phiredstp:  0.01
+...nphistp:  3
+...nphinored (also used for consecutive bad lambda cycles):  3
+...best mean phi sequence: 16477.9 , 2406.27 , 
+...best phi yet:  2406.27
+...number of consecutive bad lambda testing cycles:  0
+...number of iterations satisfying phiredstp criteria:  1
+...number of iterations since best yet mean phi:  0
+
+  ---  starting solve for iteration: 2  ---  
+...current lambda:  3.75
+...starting calcs for glm factor 1.875
+...finished calcs for: 1.875
+...starting calcs for glm factor 3.75
+...finished calcs for: 3.75
+...starting calcs for glm factor 7.5
+...finished calcs for: 7.5
+
+  ---  running upgrade ensembles  ---  
+...subset idx:pe real name:  2:29, 7:BASE, 58:54, 75:71, 78:74, 138:135, 142:139, 197:196, 
+...subset idx:oe real name:  2:29, 7:BASE, 58:54, 75:71, 78:74, 138:135, 142:139, 197:196, 
+    running model 48 times
+    starting at 11/22/26 22:33:05
+    8 agents ready
+
+
+PANTHER progress
+   avg = average model run time in minutes
+   runs(C = completed | F = failed | T = timed out)
+   agents(R = running | W = waiting | U = unavailable)
+--------------------------------------------------------------------------------
+11/22 22:33:06 mn:0     runs(C0    |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:33:07 mn:0     runs(C0    |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:33:08 mn:0.043 runs(C8    |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:33:09 mn:0.043 runs(C8    |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:33:10 mn:0.043 runs(C8    |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:33:11 mn:0.046 runs(C16   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:33:12 mn:0.046 runs(C16   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:33:13 mn:0.046 runs(C17   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:33:14 mn:0.046 runs(C24   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:33:15 mn:0.046 runs(C24   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:33:16 mn:0.045 runs(C29   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:33:17 mn:0.046 runs(C32   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:33:18 mn:0.046 runs(C32   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:33:19 mn:0.046 runs(C40   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:33:20 mn:0.046 runs(C40   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:33:21 mn:0.045 runs(C42   |F0    |T0    ) agents(R6   |W2   |U0   ) 0  11/22 22:33:22 remaining file transfers: 0                                       
+
+   48 runs complete :  0 runs failed
+   0.0448 avg run time (min) : 0.278 run mgr time (min)
+   8 agents connected
+
+
+
+  ---  evaluating upgrade ensembles  ---  
+...last mean:  2406.27
+...last stdev:  1527.58
+
+  ---  phi summary for best lambda, scale fac: 1.875 , 1 ,   ---  
+       phi type           mean            std            min            max
+       measured        490.355        123.068        240.452        651.065
+         actual        283.519        62.9857        219.563        408.347
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+  ---  running remaining realizations for best lambda, scale:1.875 , 1 ,   ---  
+    running model 192 times
+    starting at 11/22/26 22:33:22
+    8 agents ready
+
+
+PANTHER progress
+   avg = average model run time in minutes
+   runs(C = completed | F = failed | T = timed out)
+   agents(R = running | W = waiting | U = unavailable)
+--------------------------------------------------------------------------------
+11/22 22:33:23 mn:0     runs(C0    |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:33:24 mn:0     runs(C0    |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:33:25 mn:0.043 runs(C8    |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:33:26 mn:0.043 runs(C8    |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:33:27 mn:0.042 runs(C9    |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:33:28 mn:0.044 runs(C16   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:33:29 mn:0.044 runs(C17   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:33:30 mn:0.044 runs(C19   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:33:31 mn:0.044 runs(C25   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:33:32 mn:0.044 runs(C25   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:33:33 mn:0.044 runs(C31   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:33:34 mn:0.044 runs(C33   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:33:35 mn:0.044 runs(C33   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:33:36 mn:0.045 runs(C41   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:33:37 mn:0.045 runs(C41   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:33:38 mn:0.045 runs(C41   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:33:39 mn:0.045 runs(C49   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:33:40 mn:0.045 runs(C49   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:33:41 mn:0.045 runs(C52   |F0    |T0    ) agents(R7   |W0   |U1   ) 0  11/22 22:33:42 mn:0.045 runs(C57   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:33:43 mn:0.044 runs(C58   |F0    |T0    ) agents(R7   |W0   |U1   ) 0  11/22 22:33:44 mn:0.045 runs(C65   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:33:45 mn:0.045 runs(C65   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:33:46 mn:0.044 runs(C67   |F0    |T0    ) agents(R7   |W0   |U1   ) 0  11/22 22:33:47 mn:0.044 runs(C73   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:33:48 mn:0.044 runs(C74   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:33:49 mn:0.043 runs(C77   |F0    |T0    ) agents(R7   |W0   |U1   ) 0  11/22 22:33:50 mn:0.043 runs(C82   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:33:51 mn:0.043 runs(C83   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:33:52 mn:0.042 runs(C89   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:33:53 mn:0.042 runs(C91   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:33:54 mn:0.042 runs(C92   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:33:55 mn:0.042 runs(C99   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:33:56 mn:0.042 runs(C99   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:33:57 mn:0.042 runs(C102  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:33:58 mn:0.043 runs(C107  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:33:59 mn:0.043 runs(C108  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:34:00 mn:0.042 runs(C115  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:34:01 mn:0.042 runs(C116  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:34:02 mn:0.042 runs(C116  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:34:03 mn:0.044 runs(C124  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:34:04 mn:0.044 runs(C124  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:34:05 mn:0.043 runs(C126  |F0    |T0    ) agents(R7   |W0   |U1   ) 0  11/22 22:34:06 mn:0.044 runs(C132  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:34:07 mn:0.044 runs(C132  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:34:08 mn:0.044 runs(C139  |F0    |T0    ) agents(R7   |W0   |U1   ) 0  11/22 22:34:09 mn:0.045 runs(C140  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:34:10 mn:0.045 runs(C140  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:34:11 mn:0.045 runs(C148  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:34:12 mn:0.045 runs(C148  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:34:13 mn:0.045 runs(C149  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:34:14 mn:0.045 runs(C156  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:34:15 mn:0.044 runs(C157  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:34:16 mn:0.044 runs(C161  |F0    |T0    ) agents(R5   |W1   |U2   ) 0  11/22 22:34:17 mn:0.044 runs(C165  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:34:18 mn:0.044 runs(C165  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:34:19 mn:0.044 runs(C172  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:34:20 mn:0.044 runs(C173  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:34:21 mn:0.044 runs(C173  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:34:22 mn:0.046 runs(C181  |F0    |T0    ) agents(R7   |W0   |U1   ) 0  11/22 22:34:23 mn:0.046 runs(C181  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:34:24 mn:0.046 runs(C182  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:34:25 mn:0.046 runs(C189  |F0    |T0    ) agents(R3   |W5   |U0   ) 0  11/22 22:34:26 mn:0.046 runs(C190  |F0    |T0    ) agents(R2   |W6   |U0   ) 0  11/22 22:34:27 remaining file transfers: 0                                       
+
+   192 runs complete :  0 runs failed
+   0.0443 avg run time (min) : 1.08 run mgr time (min)
+   8 agents connected
+
+
+...phi summary for entire ensemble using lambda,scale_fac 1.875 , 1 , 
+       phi type           mean            std            min            max
+       measured        573.488        182.846        240.452        1556.74
+         actual        342.694        174.291        200.053        1361.43
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+...last best mean phi * acceptable phi factor:  2526.59
+...current best mean phi:  573.488
+
+  ---  updating parameter ensemble  ---  
+
+  ---  updating lambda to  1.40625  ---  
+
+  ---  EnsembleMethod iteration 2 report  ---  
+   number of active realizations:   200
+   number of model runs:            680
+      current obs ensemble saved to pest_AN_v1.2.obs.csv
+      current par ensemble saved to pest_AN_v1.2.par.csv
+saved par and rei files for realization BASE for iteration 2
+saved par and rei files for realization BASE
+       phi type           mean            std            min            max
+       measured        573.488        182.846        240.452        1556.74
+         actual        342.694        174.291        200.053        1361.43
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+  ---  observation group phi summary ---  
+       (computed using 'actual' phi)
+           (sorted by mean phi)
+group      count  nconflict      mean       std       min       max   percent       std
+nitrate      121          0       193       165        92  1.23e+03        53      13.5
+phosphate    121          0       150        67       106       511        47      13.5
+    Note: 'percent' is the percentage of the actual phi for each realization.
+
+
+   ---  parameter group change summmary  ---    
+group   count  mean chg  std chg  n at ubnd  % at ubnd  n at lbnd  % at lbnd  n std decr
+model       5     47.46    79.29          0          0          0          0           0
+    Note: parameter change summary sorted according to percent at bounds.
+    Note: the parameter change statistics implicitly include the effect of 
+          realizations that have failed or have been dropped.
+    Note: the 'n std decr' is the number of parameters with current
+          std less 5% of their initial std.
+
+...saved parameter change summary to pest_AN_v1.2.pcs.csv
+
+  ---  phi-based termination criteria check  ---  
+...phiredstp:  0.01
+...nphistp:  3
+...nphinored (also used for consecutive bad lambda cycles):  3
+...best mean phi sequence: 16477.9 , 2406.27 , 573.488 , 
+...best phi yet:  573.488
+...number of consecutive bad lambda testing cycles:  0
+...number of iterations satisfying phiredstp criteria:  1
+...number of iterations since best yet mean phi:  0
+
+  ---  starting solve for iteration: 3  ---  
+...current lambda:  1.40625
+...starting calcs for glm factor 0.703125
+...finished calcs for: 0.703125
+...starting calcs for glm factor 1.40625
+...finished calcs for: 1.40625
+...starting calcs for glm factor 2.8125
+...finished calcs for: 2.8125
+
+  ---  running upgrade ensembles  ---  
+...subset idx:pe real name:  0:29, 1:BASE, 7:196, 80:72, 87:80, 90:83, 118:112, 183:181, 
+...subset idx:oe real name:  0:29, 1:BASE, 7:196, 80:72, 87:80, 90:83, 118:112, 183:181, 
+    running model 48 times
+    starting at 11/22/26 22:34:27
+    8 agents ready
+
+
+PANTHER progress
+   avg = average model run time in minutes
+   runs(C = completed | F = failed | T = timed out)
+   agents(R = running | W = waiting | U = unavailable)
+--------------------------------------------------------------------------------
+11/22 22:34:28 mn:0     runs(C0    |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:34:29 mn:0     runs(C0    |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:34:30 mn:0.045 runs(C8    |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:34:31 mn:0.045 runs(C8    |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:34:32 mn:0.045 runs(C9    |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:34:33 mn:0.046 runs(C16   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:34:34 mn:0.046 runs(C16   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:34:35 mn:0.046 runs(C17   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:34:36 mn:0.047 runs(C24   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:34:37 mn:0.046 runs(C25   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:34:38 mn:0.046 runs(C25   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:34:39 mn:0.045 runs(C33   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:34:40 mn:0.045 runs(C33   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:34:41 mn:0.045 runs(C38   |F0    |T0    ) agents(R7   |W0   |U1   ) 0  11/22 22:34:42 mn:0.045 runs(C41   |F0    |T0    ) agents(R7   |W1   |U0   ) 0  11/22 22:34:43 mn:0.045 runs(C41   |F0    |T0    ) agents(R7   |W1   |U0   ) 0  11/22 22:34:44 remaining file transfers: 0                                       
+
+   48 runs complete :  0 runs failed
+   0.044 avg run time (min) : 0.28 run mgr time (min)
+   8 agents connected
+
+
+
+  ---  evaluating upgrade ensembles  ---  
+...last mean:  573.488
+...last stdev:  182.846
+
+  ---  phi summary for best lambda, scale fac: 0.703125 , 1 ,   ---  
+       phi type           mean            std            min            max
+       measured        414.319        93.8559        200.149        497.548
+         actual        204.695        6.80743        198.275        216.772
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+  ---  running remaining realizations for best lambda, scale:0.703125 , 1 ,   ---  
+    running model 192 times
+    starting at 11/22/26 22:34:44
+    8 agents ready
+
+
+PANTHER progress
+   avg = average model run time in minutes
+   runs(C = completed | F = failed | T = timed out)
+   agents(R = running | W = waiting | U = unavailable)
+--------------------------------------------------------------------------------
+11/22 22:34:45 mn:0     runs(C0    |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:34:46 mn:0     runs(C0    |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:34:47 mn:0.045 runs(C8    |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:34:48 mn:0.045 runs(C8    |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:34:49 mn:0.045 runs(C8    |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:34:50 mn:0.046 runs(C16   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:34:51 mn:0.046 runs(C16   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:34:52 mn:0.046 runs(C18   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:34:53 mn:0.046 runs(C24   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:34:54 mn:0.046 runs(C24   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:34:55 mn:0.046 runs(C27   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:34:56 mn:0.046 runs(C32   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:34:57 mn:0.046 runs(C33   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:34:58 mn:0.045 runs(C40   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:34:59 mn:0.045 runs(C40   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:35:00 mn:0.044 runs(C42   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:35:01 mn:0.045 runs(C48   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:35:02 mn:0.044 runs(C49   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:35:03 mn:0.044 runs(C50   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:35:04 mn:0.044 runs(C57   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:35:05 mn:0.043 runs(C58   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:35:06 mn:0.043 runs(C60   |F0    |T0    ) agents(R6   |W1   |U1   ) 0  11/22 22:35:07 mn:0.045 runs(C66   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:35:08 mn:0.045 runs(C66   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:35:09 mn:0.045 runs(C70   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:35:10 mn:0.046 runs(C74   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:35:11 mn:0.046 runs(C74   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:35:12 mn:0.046 runs(C82   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:35:13 mn:0.046 runs(C82   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:35:14 mn:0.046 runs(C82   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:35:15 mn:0.046 runs(C90   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:35:16 mn:0.046 runs(C90   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:35:17 mn:0.046 runs(C90   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:35:18 mn:0.047 runs(C98   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:35:19 mn:0.047 runs(C98   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:35:20 mn:0.047 runs(C99   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:35:21 mn:0.046 runs(C106  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:35:22 mn:0.046 runs(C106  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:35:23 mn:0.046 runs(C111  |F0    |T0    ) agents(R7   |W0   |U1   ) 0  11/22 22:35:24 mn:0.046 runs(C114  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:35:25 mn:0.046 runs(C114  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:35:26 mn:0.046 runs(C122  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:35:27 mn:0.046 runs(C122  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:35:28 mn:0.046 runs(C122  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:35:29 mn:0.047 runs(C130  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:35:30 mn:0.047 runs(C130  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:35:31 mn:0.046 runs(C132  |F0    |T0    ) agents(R7   |W0   |U1   ) 0  11/22 22:35:32 mn:0.046 runs(C138  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:35:33 mn:0.046 runs(C138  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:35:34 mn:0.046 runs(C140  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:35:35 mn:0.046 runs(C146  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:35:36 mn:0.045 runs(C147  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:35:37 mn:0.045 runs(C154  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:35:38 mn:0.045 runs(C155  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:35:39 mn:0.045 runs(C155  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:35:40 mn:0.045 runs(C163  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:35:41 mn:0.045 runs(C163  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:35:42 mn:0.044 runs(C166  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:35:43 mn:0.045 runs(C171  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:35:44 mn:0.045 runs(C171  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:35:45 mn:0.044 runs(C175  |F0    |T0    ) agents(R7   |W0   |U1   ) 0  11/22 22:35:46 mn:0.044 runs(C179  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:35:47 mn:0.043 runs(C182  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:35:48 mn:0.043 runs(C187  |F0    |T0    ) agents(R5   |W3   |U0   ) 0  11/22 22:35:49 mn:0.043 runs(C188  |F0    |T0    ) agents(R4   |W4   |U0   ) 0  11/22 22:35:50 remaining file transfers: 0                                       
+
+   192 runs complete :  0 runs failed
+   0.0411 avg run time (min) : 1.1 run mgr time (min)
+   8 agents connected
+
+
+...phi summary for entire ensemble using lambda,scale_fac 0.703125 , 1 , 
+       phi type           mean            std            min            max
+       measured        441.463        47.7337        200.149        796.717
+         actual        212.064        26.1996        197.673        493.095
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+...last best mean phi * acceptable phi factor:  602.162
+...current best mean phi:  441.463
+
+  ---  updating parameter ensemble  ---  
+
+  ---  updating lambda to  0.527344  ---  
+
+  ---  EnsembleMethod iteration 3 report  ---  
+   number of active realizations:   200
+   number of model runs:            920
+      current obs ensemble saved to pest_AN_v1.3.obs.csv
+      current par ensemble saved to pest_AN_v1.3.par.csv
+saved par and rei files for realization BASE for iteration 3
+saved par and rei files for realization BASE
+       phi type           mean            std            min            max
+       measured        441.463        47.7337        200.149        796.717
+         actual        212.064        26.1996        197.673        493.095
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+  ---  observation group phi summary ---  
+       (computed using 'actual' phi)
+           (sorted by mean phi)
+group      count  nconflict      mean       std       min       max   percent       std
+phosphate    121          0       111      8.16       106       166      52.5      3.85
+nitrate      121          0       101      25.1      91.6       386      47.5      3.85
+    Note: 'percent' is the percentage of the actual phi for each realization.
+
+
+   ---  parameter group change summmary  ---    
+group   count  mean chg  std chg  n at ubnd  % at ubnd  n at lbnd  % at lbnd  n std decr
+model       5     51.23    90.52          0          0          0          0           0
+    Note: parameter change summary sorted according to percent at bounds.
+    Note: the parameter change statistics implicitly include the effect of 
+          realizations that have failed or have been dropped.
+    Note: the 'n std decr' is the number of parameters with current
+          std less 5% of their initial std.
+
+...saved parameter change summary to pest_AN_v1.3.pcs.csv
+
+  ---  phi-based termination criteria check  ---  
+...phiredstp:  0.01
+...nphistp:  3
+...nphinored (also used for consecutive bad lambda cycles):  3
+...best mean phi sequence: 16477.9 , 2406.27 , 573.488 , 441.463 , 
+...best phi yet:  441.463
+...number of consecutive bad lambda testing cycles:  0
+...number of iterations satisfying phiredstp criteria:  1
+...number of iterations since best yet mean phi:  0
+
+  ---  starting solve for iteration: 4  ---  
+...current lambda:  0.527344
+...starting calcs for glm factor 0.263672
+...finished calcs for: 0.263672
+...starting calcs for glm factor 0.527344
+...finished calcs for: 0.527344
+...starting calcs for glm factor 1.05469
+...finished calcs for: 1.05469
+
+  ---  running upgrade ensembles  ---  
+...subset idx:pe real name:  1:BASE, 2:196, 24:6, 26:8, 47:31, 68:53, 97:88, 135:128, 
+...subset idx:oe real name:  1:BASE, 2:196, 24:6, 26:8, 47:31, 68:53, 97:88, 135:128, 
+    running model 48 times
+    starting at 11/22/26 22:35:50
+    8 agents ready
+
+
+PANTHER progress
+   avg = average model run time in minutes
+   runs(C = completed | F = failed | T = timed out)
+   agents(R = running | W = waiting | U = unavailable)
+--------------------------------------------------------------------------------
+11/22 22:35:51 mn:0     runs(C0    |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:35:52 mn:0     runs(C0    |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:35:53 mn:0.043 runs(C8    |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:35:54 mn:0.043 runs(C8    |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:35:55 mn:0.043 runs(C8    |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:35:56 mn:0.045 runs(C16   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:35:57 mn:0.045 runs(C16   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:35:58 mn:0.045 runs(C18   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:35:59 mn:0.045 runs(C24   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:36:00 mn:0.045 runs(C25   |F0    |T0    ) agents(R7   |W0   |U1   ) 0  11/22 22:36:01 mn:0.044 runs(C32   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:36:02 mn:0.044 runs(C32   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:36:03 mn:0.044 runs(C33   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:36:04 mn:0.045 runs(C40   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:36:05 mn:0.044 runs(C41   |F0    |T0    ) agents(R7   |W1   |U0   ) 0  11/22 22:36:06 mn:0.044 runs(C41   |F0    |T0    ) agents(R7   |W1   |U0   ) 0  11/22 22:36:06 remaining file transfers: 0                                       
+
+   48 runs complete :  0 runs failed
+   0.0443 avg run time (min) : 0.275 run mgr time (min)
+   8 agents connected
+
+
+
+  ---  evaluating upgrade ensembles  ---  
+...last mean:  441.463
+...last stdev:  47.7337
+
+  ---  phi summary for best lambda, scale fac: 0.263672 , 1 ,   ---  
+       phi type           mean            std            min            max
+       measured        416.589        92.2627        197.644        481.686
+         actual        203.458        3.84526        197.644        208.023
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+
+  ---  running remaining realizations for best lambda, scale:0.263672 , 1 ,   ---  
+    running model 192 times
+    starting at 11/22/26 22:36:06
+    8 agents ready
+
+
+PANTHER progress
+   avg = average model run time in minutes
+   runs(C = completed | F = failed | T = timed out)
+   agents(R = running | W = waiting | U = unavailable)
+--------------------------------------------------------------------------------
+11/22 22:36:07 mn:0     runs(C0    |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:36:08 mn:0     runs(C0    |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:36:09 mn:0.047 runs(C8    |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:36:10 mn:0.047 runs(C8    |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:36:11 mn:0.047 runs(C8    |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:36:12 mn:0.048 runs(C16   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:36:13 mn:0.048 runs(C16   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:36:14 mn:0.048 runs(C16   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:36:15 mn:0.047 runs(C24   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:36:16 mn:0.047 runs(C24   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:36:17 mn:0.047 runs(C25   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:36:18 mn:0.046 runs(C32   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:36:19 mn:0.046 runs(C32   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:36:20 mn:0.045 runs(C36   |F0    |T0    ) agents(R7   |W0   |U1   ) 0  11/22 22:36:21 mn:0.046 runs(C40   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:36:22 mn:0.046 runs(C40   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:36:23 mn:0.045 runs(C48   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:36:24 mn:0.045 runs(C48   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:36:25 mn:0.045 runs(C49   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:36:26 mn:0.044 runs(C56   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:36:27 mn:0.043 runs(C57   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:36:28 mn:0.043 runs(C64   |F0    |T0    ) agents(R5   |W1   |U2   ) 0  11/22 22:36:29 mn:0.043 runs(C65   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:36:30 mn:0.043 runs(C65   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:36:31 mn:0.043 runs(C72   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:36:32 mn:0.044 runs(C73   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:36:33 mn:0.044 runs(C73   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:36:34 mn:0.048 runs(C80   |F0    |T0    ) agents(R6   |W1   |U1   ) 0  11/22 22:36:36 mn:0.049 runs(C81   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:36:37 mn:0.049 runs(C81   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:36:38 mn:0.049 runs(C87   |F0    |T0    ) agents(R7   |W0   |U1   ) 0  11/22 22:36:39 mn:0.049 runs(C89   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:36:40 mn:0.049 runs(C89   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:36:41 mn:0.047 runs(C97   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:36:42 mn:0.047 runs(C97   |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:36:43 mn:0.045 runs(C101  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:36:44 mn:0.044 runs(C105  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:36:45 mn:0.044 runs(C105  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:36:46 mn:0.043 runs(C113  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:36:47 mn:0.043 runs(C113  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:36:48 mn:0.043 runs(C117  |F0    |T0    ) agents(R6   |W1   |U1   ) 0  11/22 22:36:49 mn:0.042 runs(C121  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:36:50 mn:0.042 runs(C121  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:36:51 mn:0.043 runs(C129  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:36:52 mn:0.043 runs(C129  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:36:53 mn:0.043 runs(C132  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:36:54 mn:0.042 runs(C137  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:36:55 mn:0.042 runs(C137  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:36:56 mn:0.042 runs(C145  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:36:57 mn:0.042 runs(C145  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:36:58 mn:0.041 runs(C148  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:36:59 mn:0.04  runs(C153  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:37:00 mn:0.039 runs(C156  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:37:01 mn:0.04  runs(C161  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:37:02 mn:0.04  runs(C162  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:37:03 mn:0.04  runs(C166  |F0    |T0    ) agents(R7   |W0   |U1   ) 0  11/22 22:37:04 mn:0.038 runs(C171  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:37:05 mn:0.038 runs(C172  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:37:06 mn:0.037 runs(C179  |F0    |T0    ) agents(R7   |W0   |U1   ) 0  11/22 22:37:07 mn:0.037 runs(C180  |F0    |T0    ) agents(R8   |W0   |U0   ) 0  11/22 22:37:08 mn:0.038 runs(C186  |F0    |T0    ) agents(R6   |W2   |U0   ) 0  11/22 22:37:09 mn:0.038 runs(C188  |F0    |T0    ) agents(R4   |W4   |U0   ) 0  11/22 22:37:09 remaining file transfers: 0                                       
+
+   192 runs complete :  0 runs failed
+   0.0369 avg run time (min) : 1.05 run mgr time (min)
+   8 agents connected
+
+
+...phi summary for entire ensemble using lambda,scale_fac 0.263672 , 1 , 
+       phi type           mean            std            min            max
+       measured        433.387        39.0448        197.644        524.894
+         actual        203.338        4.25636        197.644        229.925
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+...last best mean phi * acceptable phi factor:  463.536
+...current best mean phi:  433.387
+
+  ---  updating parameter ensemble  ---  
+
+  ---  updating lambda to  0.197754  ---  
+
+  ---  EnsembleMethod iteration 4 report  ---  
+   number of active realizations:   200
+   number of model runs:            1160
+      current obs ensemble saved to pest_AN_v1.4.obs.csv
+      current par ensemble saved to pest_AN_v1.4.par.csv
+saved par and rei files for realization BASE for iteration 4
+saved par and rei files for realization BASE
+       phi type           mean            std            min            max
+       measured        433.387        39.0448        197.644        524.894
+         actual        203.338        4.25636        197.644        229.925
+     note: 'measured' phi reported above includes 
+           realizations of measurement noise, 
+           'actual' phi does not.
+  ---  observation group phi summary ---  
+       (computed using 'actual' phi)
+           (sorted by mean phi)
+group      count  nconflict      mean       std       min       max   percent       std
+phosphate    121          0       108      2.72       106       119      53.4      1.01
+nitrate      121          0      94.9      3.23      91.6       116      46.6      1.01
+    Note: 'percent' is the percentage of the actual phi for each realization.
+
+
+   ---  parameter group change summmary  ---    
+group   count  mean chg  std chg  n at ubnd  % at ubnd  n at lbnd  % at lbnd  n std decr
+model       5     51.81    92.52          0          0          0          0           0
+    Note: parameter change summary sorted according to percent at bounds.
+    Note: the parameter change statistics implicitly include the effect of 
+          realizations that have failed or have been dropped.
+    Note: the 'n std decr' is the number of parameters with current
+          std less 5% of their initial std.
+
+...saved parameter change summary to pest_AN_v1.4.pcs.csv
+
+  ---  phi-based termination criteria check  ---  
+...phiredstp:  0.01
+...nphistp:  3
+...nphinored (also used for consecutive bad lambda cycles):  3
+...best mean phi sequence: 16477.9 , 2406.27 , 573.488 , 441.463 , 433.387 , 
+...best phi yet:  433.387
+...number of consecutive bad lambda testing cycles:  0
+...number of iterations satisfying phiredstp criteria:  1
+...number of iterations since best yet mean phi:  0
+
+
+pestpp-ies analysis complete...
+started at 11/22/26 22:30:38
+finished at 11/22/26 22:37:09
+took 6.51667 minutes
+noptmax:12, npar_adj:5, nnz_obs:242
+noptmax:4, npar_adj:5, nnz_obs:242
+pestpp-ies finished in 392 s

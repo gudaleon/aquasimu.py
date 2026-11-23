@@ -1,0 +1,16 @@
+# Caches and local environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.env
+*.egg-info/
+.coverage
+htmlcov/
+
+# Large regenerable binaries from the Octave vs Python equivalence run
+# (octave_out_90d_AN_v1.mat ~28 MB, python_faithful_90d_AN_v1.npz ~50 MB).
+# Keep the small CSV/JSON inputs and summary tables. See README.md to regenerate.
+results_AN_v1/*.npz
+results_AN_v1/*.mat

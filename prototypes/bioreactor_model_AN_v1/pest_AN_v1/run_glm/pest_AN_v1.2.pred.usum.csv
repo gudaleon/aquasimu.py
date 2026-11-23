@@ -1,0 +1,3 @@
+name,prior_mean,prior_stdev,prior_lower_bound,prior_upper_bound,post_mean,post_stdev,post_lower_bound,post_upper_bound
+fkgn,11.246,26.2655,-41.285,63.7769,26.7806,0.344715,26.0912,27.47
+fkgp,1.48025,2.01989,-2.55953,5.52003,1.59972,0.0197343,1.56026,1.63919

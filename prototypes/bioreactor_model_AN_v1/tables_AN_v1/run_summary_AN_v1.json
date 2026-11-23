@@ -1,0 +1,40 @@
+{
+ "true_run_max_rel_residual": 6.966992073256128e-17,
+ "worst_rel_residual_over_200_posterior_runs": 2.304810913351249e-16,
+ "tolerance": 1e-06,
+ "dream_fixed": {
+  "n_gen": 8000,
+  "chains": 8,
+  "model_runs": 64000,
+  "accept": 0.069171875,
+  "max_Rhat": 1.011504117252707
+ },
+ "dream_hetero": {
+  "n_gen": 14000,
+  "chains": 8,
+  "model_runs": 112000,
+  "accept": 0.052133928571428574,
+  "max_Rhat": 1.016065462920442
+ },
+ "pest_glm": {
+  "iterations": 5,
+  "final_phi": 197.4536737834942,
+  "n_obs_weighted": 242,
+  "singular_values": [
+   416016.0411418132,
+   38627.469136746215,
+   31179.97761457229,
+   699.9163684853144,
+   157.88309685664208
+  ]
+ },
+ "pest_ies": {
+  "final_iteration": 4,
+  "n_realisations": 200,
+  "median_phi": 202.263
+ },
+ "truth": {
+  "kgN": 25.912887631267864,
+  "kgP": 1.570063452451464
+ }
+}

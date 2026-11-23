@@ -1,0 +1,41 @@
+{
+ "n_days": 90,
+ "steps": 12960,
+ "octave_seconds": 10.93446946144104,
+ "python_seconds": 3.040011405944824,
+ "worst_rel_diff": 6.700243950408994e-10,
+ "water_original": {
+  "inflow_L": 1069001.6843114588,
+  "outflow_L": 527713.6678037667,
+  "overflow_L": 249765.07447330162,
+  "underdrain_L": 277948.593330465,
+  "exfiltration_L": 303953.24354586296,
+  "ET_L": 12856.952751901685,
+  "storage_change_L": 6109.700924790946,
+  "residual_L": 218368.11928513655,
+  "residual_rel": 0.2042729422131705
+ },
+ "water_full": {
+  "inflow_after_catchment_L": 850623.2440823368,
+  "catchment_retention_L": 218378.44022912194,
+  "outflow_L": 527713.6678037667,
+  "exfiltration_L": 303953.24354586296,
+  "ET_L": 12856.952751901686,
+  "storage_change_L": 6109.7009247909455,
+  "residual_L": -10.320943985486338,
+  "residual_rel": -1.2133390496071741e-05
+ },
+ "p_original": {
+  "inflow_mg": 2339391.493492607,
+  "outflow_mg": 149822.36529231328,
+  "leak_to_deeper_mg": 545064.3926913231,
+  "exfil_plus_deep_storage_mg": 477664.5019751993,
+  "exfiltration_mg": 27950.014888531965,
+  "soil_accum_mg": 1760984.8681598986,
+  "plant_accum_mg": 144582.18019674806,
+  "porewater_mg_as_coded": 1617.7665032741168,
+  "closure_residual_mg": -112857.71405863678,
+  "closure_residual_rel": -0.04824233753630747,
+  "unbooked_uptake_mg": 39694.251811752954
+ }
+}

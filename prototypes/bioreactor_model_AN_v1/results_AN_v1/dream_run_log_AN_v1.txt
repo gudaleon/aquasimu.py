@@ -1,0 +1,26 @@
+== DREAM(ZS) run 1: fixed (known) sigma, 5 parameters
+  gen   1000  max R-hat 1.375  acc 0.03  best logp -100.99
+  gen   2000  max R-hat 1.151  acc 0.03  best logp -99.29
+  gen   3000  max R-hat 1.074  acc 0.04  best logp -98.91
+  gen   4000  max R-hat 1.024  acc 0.04  best logp -98.91
+  gen   5000  max R-hat 1.015  acc 0.05  best logp -98.85
+  gen   6000  max R-hat 1.022  acc 0.06  best logp -98.85
+  gen   7000  max R-hat 1.014  acc 0.06  best logp -98.73
+  gen   8000  max R-hat 1.012  acc 0.07  best logp -98.73
+   64000 model runs in 154 s, acceptance 0.07
+== DREAM(ZS) run 2: heteroscedastic sigma estimated, 9 parameters
+  gen   1000  max R-hat 3.654  acc 0.03  best logp 454.35
+  gen   2000  max R-hat 1.753  acc 0.02  best logp 461.12
+  gen   3000  max R-hat 1.637  acc 0.02  best logp 461.88
+  gen   4000  max R-hat 1.149  acc 0.02  best logp 462.38
+  gen   5000  max R-hat 1.215  acc 0.03  best logp 463.07
+  gen   6000  max R-hat 1.116  acc 0.03  best logp 463.07
+  gen   7000  max R-hat 1.118  acc 0.03  best logp 463.07
+  gen   8000  max R-hat 1.089  acc 0.04  best logp 463.07
+  gen   9000  max R-hat 1.062  acc 0.04  best logp 463.07
+  gen  10000  max R-hat 1.039  acc 0.04  best logp 463.07
+  gen  11000  max R-hat 1.032  acc 0.05  best logp 463.20
+  gen  12000  max R-hat 1.036  acc 0.05  best logp 463.20
+  gen  13000  max R-hat 1.018  acc 0.05  best logp 463.20
+  gen  14000  max R-hat 1.016  acc 0.05  best logp 463.20
+   112000 model runs in 485 s, acceptance 0.05

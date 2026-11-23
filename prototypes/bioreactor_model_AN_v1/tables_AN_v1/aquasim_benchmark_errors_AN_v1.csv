@@ -1,0 +1,31 @@
+case,quantity,n_points,RMSE,max_abs_err,scale,RMSE_pct_of_scale,max_err_pct_of_scale,N_rel_resid,P_rel_resid,water_rel_resid,mass_recovered_py,t50_front_py,t50_front_aquasim,bvp_converged
+B1 batch first-order (proc_a),C_A(t) python vs AQUASIM,100,1.01825e-06,2.93181e-06,1,0.000101825,0.000293181,0,0,0,,,,
+B1 batch first-order (proc_a),C_A(t) AQUASIM vs analytic exp(-kt),100,1.01779e-06,2.93062e-06,1,0.000101779,0.000293062,,,,,,,
+"B2 batch Monod (proc_b, C_B(0)=1)",C_B(t) python vs AQUASIM,100,5.8685e-07,1.2559e-06,1,5.8685e-05,0.00012559,3.72191e-16,0,0,,,,
+B3 AD tracer pulse (advdif_a) n=50 outlet=transmission,"C(x=L,t) python vs AQUASIM",300,0.000540019,0.00117559,1,0.0540019,0.117559,0,2.22045e-16,0,0.988683,,,
+B3 AD tracer pulse (advdif_a) n=100 outlet=transmission,"C(x=L,t) python vs AQUASIM",300,8.21107e-05,0.00017611,1,0.00821107,0.017611,0,3.88578e-16,0,0.98864,,,
+B3 AD tracer pulse (advdif_a) n=200 outlet=transmission,"C(x=L,t) python vs AQUASIM",300,0.000373321,0.000840021,1,0.0373321,0.0840021,0,1.66533e-16,0,0.988624,,,
+B3 AD tracer pulse (advdif_a) n=200 outlet=zero_gradient,"C(x=L,t) python vs AQUASIM",300,0.057247,0.0963596,1,5.7247,9.63596,0,4.996e-16,0,0.990712,,,
+B4 soil_a sorption column,"no sorption, python n=52 vs AQUASIM (52 pts)",200,0.00144283,0.01023,1,0.144283,1.023,0,1.019e-14,0,,0.402676,0.402962,
+B4 soil_a sorption column,"no sorption, python n=502 vs AQUASIM (502 pts)",200,0.00162436,0.0152586,1,0.162436,1.52586,0,2.1684e-16,0,,0.405315,0.405365,
+B4 soil_a sorption column,"linear, python n=52 vs AQUASIM (52 pts)",200,0.00236412,0.0095878,1,0.236412,0.95878,0,1.46367e-15,0,,1.19789,1.19866,
+B4 soil_a sorption column,"linear, python n=502 vs AQUASIM (502 pts)",200,0.000318256,0.00206317,1,0.0318256,0.206317,0,2.10335e-14,0,,1.2039,1.2039,
+B4 soil_a sorption column,"Langmuir (pulse 1.0), python n=52 vs AQUASIM (52 pts)",200,0.0102506,0.111551,1,1.02506,11.1551,0,7.67886e-14,0,,0.670105,0.672991,
+B4 soil_a sorption column,"Langmuir (pulse 1.0), python n=502 vs AQUASIM (502 pts)",200,0.00284985,0.0401249,1,0.284985,4.01249,0,1.78893e-13,0,,0.674647,0.674867,
+B4 soil_a sorption column,"Langmuir (pulse 0.2), python n=52 vs AQUASIM (52 pts)",200,0.00156326,0.0131084,0.2,0.781631,6.55418,0,1.30104e-14,0,,0.974073,0.976814,
+B4 soil_a sorption column,"Langmuir (pulse 0.2), python n=502 vs AQUASIM (502 pts)",200,0.000261721,0.00361375,0.2,0.13086,1.80687,0,1.90481e-13,0,,0.975599,0.975489,
+B4 soil_b sorption column,"no sorption, python n=52 vs AQUASIM (52 pts)",200,0.00144292,0.01023,1,0.144292,1.023,0,1.019e-14,0,,0.402676,0.402962,
+B4 soil_b sorption column,"no sorption, python n=502 vs AQUASIM (502 pts)",200,0.00162629,0.0152722,1,0.162629,1.52722,0,2.1684e-16,0,,0.405315,0.405365,
+B4 soil_b sorption column,"linear, python n=52 vs AQUASIM (52 pts)",200,0.000948038,0.00242106,1,0.0948038,0.242106,0,3.25261e-16,0,,1.19754,1.19763,
+B4 soil_b sorption column,"linear, python n=502 vs AQUASIM (502 pts)",200,3.82807e-05,0.00011132,1,0.00382807,0.011132,0,1.6263e-16,0,,1.20036,1.20037,
+B4 soil_b sorption column,"Langmuir (pulse 1.0), python n=52 vs AQUASIM (52 pts)",200,0.0035208,0.0311344,1,0.35208,3.11344,0,3.25261e-16,0,,0.668761,0.669697,
+B4 soil_b sorption column,"Langmuir (pulse 1.0), python n=502 vs AQUASIM (502 pts)",200,7.91701e-05,0.000482733,1,0.00791701,0.0482733,0,8.67362e-16,0,,0.668806,0.668802,
+B4 soil_b sorption column,"Langmuir (pulse 0.2), python n=52 vs AQUASIM (52 pts)",200,0.000310413,0.00157689,0.2,0.155207,0.788445,0,3.38813e-16,0,,0.972069,0.972689,
+B4 soil_b sorption column,"Langmuir (pulse 0.2), python n=502 vs AQUASIM (502 pts)",200,7.94064e-06,2.4369e-05,0.2,0.00397032,0.0121845,0,4.74338e-16,0,,0.973787,0.973785,
+B4 soil_a linear isotherm,"analytic 50%-front time tau*R (tau=0.4 h, R=3.001)",,,,,,,,,,,1.2004,,
+B5 biofilm profile (film_a),S1 at day 10: BVP vs AQUASIM pore-water profile,10,0.0802821,0.228298,6.7985,1.18088,3.35807,,,,,,,True
+B5 biofilm profile (film_a),S1 at day 25: BVP vs AQUASIM pore-water profile,10,0.19539,0.615463,6.82991,2.86079,9.01128,,,,,,,True
+B5 biofilm profile (film_a),S1 at day 50: BVP vs AQUASIM pore-water profile,10,0.0989796,0.301739,8.0164,1.23471,3.76402,,,,,,,True
+B5 biofilm profile (film_a),S2 at day 10: BVP vs AQUASIM pore-water profile,10,0.00139012,0.00195144,9.93744,0.0139887,0.0196372,,,,,,,True
+B5 biofilm profile (film_a),S2 at day 25: BVP vs AQUASIM pore-water profile,10,0.00726462,0.00979556,9.84842,0.0737644,0.0994633,,,,,,,True
+B5 biofilm profile (film_a),S2 at day 50: BVP vs AQUASIM pore-water profile,10,0.0270379,0.0515167,9.6876,0.279099,0.53178,,,,,,,True

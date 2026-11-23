@@ -1,0 +1,1789 @@
+
+
+             pestpp-glm: a tool for GLM parameter estimation and FOSM uncertainty analysis
+
+                                   by The PEST++ Development Team
+
+
+version: 5.2.16
+binary compiled on Dec  1 2024 at 10:51:08
+
+started at 11/22/26 22:28:57
+...processing command line: ' /workspace/pestpp_bin_AN/bin/pestpp-glm pest_AN_v1.pst'
+...using serial run manager
+
+using control file: "pest_AN_v1.pst"
+
+in directory: "/workspace/bioreactor_model_AN_v1/pest_AN_v1/run_glm"
+on host: "grok-bot-vm-454799141"
+
+processing control file pest_AN_v1.pst
+Note: 3 unused lines in pest control file, see rec file...
+checking model IO files...done
+              starting serial run manager ...
+
+
+
+
+
+OPTIMISATION ITERATION NUMBER: 1
+
+  Iteration type: base parameter solution
+  SVD Package: RedSVD
+  Model calls so far : 0
+
+  calculating jacobian... 
+
+
+
+    ---  starting serial run manager for 6 runs ---    
+
+
+11/22/26 22:28:57 processing template files with 1 threads...
+11/22/26 22:28:57 done, took 0 seconds
+11/22/26 22:28:57 calling forward run command(s)
+11/22/26 22:28:57 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 318584
+...exit_code: 318584
+...status: 0
+11/22/26 22:28:58 forward run command(s) finished, took 0.724 seconds
+11/22/26 22:28:58 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:28:58 done, took 0 seconds
+
+
+-->11/22/26 22:28:58 run complete, took: 0.725 seconds
+-->1 of 6 complete, 0 failed
+
+
+11/22/26 22:28:58 processing template files with 1 threads...
+11/22/26 22:28:58 done, took 0 seconds
+11/22/26 22:28:58 calling forward run command(s)
+11/22/26 22:28:58 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 318641
+...exit_code: 318641
+...status: 0
+11/22/26 22:28:58 forward run command(s) finished, took 0.67 seconds
+11/22/26 22:28:58 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:28:58 done, took 0 seconds
+
+
+-->11/22/26 22:28:58 run complete, took: 0.673 seconds
+-->2 of 6 complete, 0 failed
+
+
+11/22/26 22:28:58 processing template files with 1 threads...
+11/22/26 22:28:58 done, took 0 seconds
+11/22/26 22:28:58 calling forward run command(s)
+11/22/26 22:28:58 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 318667
+...exit_code: 318667
+...status: 0
+11/22/26 22:28:59 forward run command(s) finished, took 0.741 seconds
+11/22/26 22:28:59 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:28:59 done, took 0 seconds
+
+
+-->11/22/26 22:28:59 run complete, took: 0.751 seconds
+-->3 of 6 complete, 0 failed
+
+
+11/22/26 22:28:59 processing template files with 1 threads...
+11/22/26 22:28:59 done, took 0 seconds
+11/22/26 22:28:59 calling forward run command(s)
+11/22/26 22:28:59 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 318688
+...exit_code: 318688
+...status: 0
+11/22/26 22:29:00 forward run command(s) finished, took 0.763 seconds
+11/22/26 22:29:00 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:00 done, took 0.003 seconds
+
+
+-->11/22/26 22:29:00 run complete, took: 0.767 seconds
+-->4 of 6 complete, 0 failed
+
+
+11/22/26 22:29:00 processing template files with 1 threads...
+11/22/26 22:29:00 done, took 0.003 seconds
+11/22/26 22:29:00 calling forward run command(s)
+11/22/26 22:29:00 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 318722
+...exit_code: 318722
+...status: 0
+11/22/26 22:29:01 forward run command(s) finished, took 0.669 seconds
+11/22/26 22:29:01 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:01 done, took 0 seconds
+
+
+-->11/22/26 22:29:01 run complete, took: 0.674 seconds
+-->5 of 6 complete, 0 failed
+
+
+11/22/26 22:29:01 processing template files with 1 threads...
+11/22/26 22:29:01 done, took 0 seconds
+11/22/26 22:29:01 calling forward run command(s)
+11/22/26 22:29:01 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 318760
+...exit_code: 318760
+...status: 0
+11/22/26 22:29:01 forward run command(s) finished, took 0.717 seconds
+11/22/26 22:29:01 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:01 done, took 0 seconds
+
+
+-->11/22/26 22:29:01 run complete, took: 0.721 seconds
+-->6 of 6 complete, 0 failed
+
+
+
+
+
+    ---  serial run manager runs summary:  ---    
+    6 of 6 complete, 0 failed
+    process took : 4.315 seconds
+
+
+
+
+  computing upgrade vectors... 
+  computing upgrade vector (lambda = 0.1)  1 / 5             
+  computing upgrade vector (lambda = 1)  2 / 5             
+  computing upgrade vector (lambda = 10)  3 / 5             
+  computing upgrade vector (lambda = 100)  4 / 5             
+  computing upgrade vector (lambda = 1000)  5 / 5             
+-->starting iteration FOSM process...
+-->finished iteration FOSM process...
+
+  performing upgrade vector model runs... 
+
+
+    ---  starting serial run manager for 10 runs ---    
+
+
+11/22/26 22:29:01 processing template files with 1 threads...
+11/22/26 22:29:01 done, took 0 seconds
+11/22/26 22:29:01 calling forward run command(s)
+11/22/26 22:29:01 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 318783
+...exit_code: 318783
+...status: 0
+11/22/26 22:29:02 forward run command(s) finished, took 0.691 seconds
+11/22/26 22:29:02 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:02 done, took 0.008 seconds
+
+
+-->11/22/26 22:29:02 run complete, took: 0.704 seconds
+-->1 of 10 complete, 0 failed
+
+
+11/22/26 22:29:02 processing template files with 1 threads...
+11/22/26 22:29:02 done, took 0 seconds
+11/22/26 22:29:02 calling forward run command(s)
+11/22/26 22:29:02 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 318807
+...exit_code: 318807
+...status: 0
+11/22/26 22:29:03 forward run command(s) finished, took 0.643 seconds
+11/22/26 22:29:03 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:03 done, took 0 seconds
+
+
+-->11/22/26 22:29:03 run complete, took: 0.648 seconds
+-->2 of 10 complete, 0 failed
+
+
+11/22/26 22:29:03 processing template files with 1 threads...
+11/22/26 22:29:03 done, took 0.003 seconds
+11/22/26 22:29:03 calling forward run command(s)
+11/22/26 22:29:03 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 318836
+...exit_code: 318836
+...status: 0
+11/22/26 22:29:03 forward run command(s) finished, took 0.681 seconds
+11/22/26 22:29:03 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:03 done, took 0 seconds
+
+
+-->11/22/26 22:29:03 run complete, took: 0.687 seconds
+-->3 of 10 complete, 0 failed
+
+
+11/22/26 22:29:03 processing template files with 1 threads...
+11/22/26 22:29:03 done, took 0.002 seconds
+11/22/26 22:29:03 calling forward run command(s)
+11/22/26 22:29:03 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 318867
+...exit_code: 318867
+...status: 0
+11/22/26 22:29:04 forward run command(s) finished, took 0.738 seconds
+11/22/26 22:29:04 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:04 done, took 0.002 seconds
+
+
+-->11/22/26 22:29:04 run complete, took: 0.744 seconds
+-->4 of 10 complete, 0 failed
+
+
+11/22/26 22:29:04 processing template files with 1 threads...
+11/22/26 22:29:04 done, took 0 seconds
+11/22/26 22:29:04 calling forward run command(s)
+11/22/26 22:29:04 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 318891
+...exit_code: 318891
+...status: 0
+11/22/26 22:29:05 forward run command(s) finished, took 0.679 seconds
+11/22/26 22:29:05 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:05 done, took 0.004 seconds
+
+
+-->11/22/26 22:29:05 run complete, took: 0.687 seconds
+-->5 of 10 complete, 0 failed
+
+
+11/22/26 22:29:05 processing template files with 1 threads...
+11/22/26 22:29:05 done, took 0 seconds
+11/22/26 22:29:05 calling forward run command(s)
+11/22/26 22:29:05 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 318912
+...exit_code: 318912
+...status: 0
+11/22/26 22:29:06 forward run command(s) finished, took 0.685 seconds
+11/22/26 22:29:06 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:06 done, took 0 seconds
+
+
+-->11/22/26 22:29:06 run complete, took: 0.691 seconds
+-->6 of 10 complete, 0 failed
+
+
+11/22/26 22:29:06 processing template files with 1 threads...
+11/22/26 22:29:06 done, took 0.003 seconds
+11/22/26 22:29:06 calling forward run command(s)
+11/22/26 22:29:06 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 318952
+...exit_code: 318952
+...status: 0
+11/22/26 22:29:06 forward run command(s) finished, took 0.673 seconds
+11/22/26 22:29:06 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:06 done, took 0 seconds
+
+
+-->11/22/26 22:29:06 run complete, took: 0.678 seconds
+-->7 of 10 complete, 0 failed
+
+
+11/22/26 22:29:06 processing template files with 1 threads...
+11/22/26 22:29:06 done, took 0.005 seconds
+11/22/26 22:29:06 calling forward run command(s)
+11/22/26 22:29:06 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 318981
+...exit_code: 318981
+...status: 0
+11/22/26 22:29:07 forward run command(s) finished, took 0.677 seconds
+11/22/26 22:29:07 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:07 done, took 0 seconds
+
+
+-->11/22/26 22:29:07 run complete, took: 0.689 seconds
+-->8 of 10 complete, 0 failed
+
+
+11/22/26 22:29:07 processing template files with 1 threads...
+11/22/26 22:29:07 done, took 0 seconds
+11/22/26 22:29:07 calling forward run command(s)
+11/22/26 22:29:07 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 319006
+...exit_code: 319006
+...status: 0
+11/22/26 22:29:08 forward run command(s) finished, took 0.716 seconds
+11/22/26 22:29:08 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:08 done, took 0 seconds
+
+
+-->11/22/26 22:29:08 run complete, took: 0.718 seconds
+-->9 of 10 complete, 0 failed
+
+
+11/22/26 22:29:08 processing template files with 1 threads...
+11/22/26 22:29:08 done, took 0 seconds
+11/22/26 22:29:08 calling forward run command(s)
+11/22/26 22:29:08 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 319024
+...exit_code: 319024
+...status: 0
+11/22/26 22:29:08 forward run command(s) finished, took 0.693 seconds
+11/22/26 22:29:08 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:08 done, took 0 seconds
+
+
+-->11/22/26 22:29:08 run complete, took: 0.697 seconds
+-->10 of 10 complete, 0 failed
+
+
+
+
+
+    ---  serial run manager runs summary:  ---    
+    10 of 10 complete, 0 failed
+    process took : 6.948 seconds
+
+
+
+
+  testing upgrade vectors... 
+
+  ...Lambda testing complete for iteration 1
+    starting phi = 9117.47;  ending phi = 250.591  (2.74848% of starting phi)
+
+
+OPTIMISATION ITERATION NUMBER: 2
+
+  Iteration type: base parameter solution
+  SVD Package: RedSVD
+  Model calls so far : 16
+
+  calculating jacobian... 
+
+
+
+    ---  starting serial run manager for 5 runs ---    
+
+
+11/22/26 22:29:08 processing template files with 1 threads...
+11/22/26 22:29:08 done, took 0 seconds
+11/22/26 22:29:08 calling forward run command(s)
+11/22/26 22:29:08 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 319048
+...exit_code: 319048
+...status: 0
+11/22/26 22:29:09 forward run command(s) finished, took 0.719 seconds
+11/22/26 22:29:09 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:09 done, took 0 seconds
+
+
+-->11/22/26 22:29:09 run complete, took: 0.723 seconds
+-->1 of 5 complete, 0 failed
+
+
+11/22/26 22:29:09 processing template files with 1 threads...
+11/22/26 22:29:09 done, took 0 seconds
+11/22/26 22:29:09 calling forward run command(s)
+11/22/26 22:29:09 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 319213
+...exit_code: 319213
+...status: 0
+11/22/26 22:29:10 forward run command(s) finished, took 0.805 seconds
+11/22/26 22:29:10 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:10 done, took 0.001 seconds
+
+
+-->11/22/26 22:29:10 run complete, took: 0.81 seconds
+-->2 of 5 complete, 0 failed
+
+
+11/22/26 22:29:10 processing template files with 1 threads...
+11/22/26 22:29:10 done, took 0 seconds
+11/22/26 22:29:10 calling forward run command(s)
+11/22/26 22:29:10 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 319237
+...exit_code: 319237
+...status: 0
+11/22/26 22:29:11 forward run command(s) finished, took 0.682 seconds
+11/22/26 22:29:11 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:11 done, took 0.006 seconds
+
+
+-->11/22/26 22:29:11 run complete, took: 0.689 seconds
+-->3 of 5 complete, 0 failed
+
+
+11/22/26 22:29:11 processing template files with 1 threads...
+11/22/26 22:29:11 done, took 0.003 seconds
+11/22/26 22:29:11 calling forward run command(s)
+11/22/26 22:29:11 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 319255
+...exit_code: 319255
+...status: 0
+11/22/26 22:29:11 forward run command(s) finished, took 0.684 seconds
+11/22/26 22:29:11 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:11 done, took 0 seconds
+
+
+-->11/22/26 22:29:11 run complete, took: 0.691 seconds
+-->4 of 5 complete, 0 failed
+
+
+11/22/26 22:29:11 processing template files with 1 threads...
+11/22/26 22:29:11 done, took 0.002 seconds
+11/22/26 22:29:11 calling forward run command(s)
+11/22/26 22:29:11 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 319280
+...exit_code: 319280
+...status: 0
+11/22/26 22:29:12 forward run command(s) finished, took 0.693 seconds
+11/22/26 22:29:12 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:12 done, took 0.004 seconds
+
+
+-->11/22/26 22:29:12 run complete, took: 0.701 seconds
+-->5 of 5 complete, 0 failed
+
+
+
+
+
+    ---  serial run manager runs summary:  ---    
+    5 of 5 complete, 0 failed
+    process took : 3.616 seconds
+
+
+
+
+  computing upgrade vectors... 
+  computing upgrade vector (lambda = 0.1)  1 / 5             
+  computing upgrade vector (lambda = 1)  2 / 5             
+  computing upgrade vector (lambda = 10)  3 / 5             
+  computing upgrade vector (lambda = 100)  4 / 5             
+  computing upgrade vector (lambda = 1000)  5 / 5             
+-->starting iteration FOSM process...
+-->finished iteration FOSM process...
+
+  performing upgrade vector model runs... 
+
+
+    ---  starting serial run manager for 10 runs ---    
+
+
+11/22/26 22:29:12 processing template files with 1 threads...
+11/22/26 22:29:12 done, took 0 seconds
+11/22/26 22:29:12 calling forward run command(s)
+11/22/26 22:29:12 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 319309
+...exit_code: 319309
+...status: 0
+11/22/26 22:29:13 forward run command(s) finished, took 0.653 seconds
+11/22/26 22:29:13 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:13 done, took 0 seconds
+
+
+-->11/22/26 22:29:13 run complete, took: 0.656 seconds
+-->1 of 10 complete, 0 failed
+
+
+11/22/26 22:29:13 processing template files with 1 threads...
+11/22/26 22:29:13 done, took 0 seconds
+11/22/26 22:29:13 calling forward run command(s)
+11/22/26 22:29:13 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 319329
+...exit_code: 319329
+...status: 0
+11/22/26 22:29:13 forward run command(s) finished, took 0.712 seconds
+11/22/26 22:29:13 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:13 done, took 0 seconds
+
+
+-->11/22/26 22:29:13 run complete, took: 0.713 seconds
+-->2 of 10 complete, 0 failed
+
+
+11/22/26 22:29:13 processing template files with 1 threads...
+11/22/26 22:29:13 done, took 0 seconds
+11/22/26 22:29:13 calling forward run command(s)
+11/22/26 22:29:13 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 319348
+...exit_code: 319348
+...status: 0
+11/22/26 22:29:14 forward run command(s) finished, took 0.781 seconds
+11/22/26 22:29:14 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:14 done, took 0 seconds
+
+
+-->11/22/26 22:29:14 run complete, took: 0.782 seconds
+-->3 of 10 complete, 0 failed
+
+
+11/22/26 22:29:14 processing template files with 1 threads...
+11/22/26 22:29:14 done, took 0 seconds
+11/22/26 22:29:14 calling forward run command(s)
+11/22/26 22:29:14 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 319372
+...exit_code: 319372
+...status: 0
+11/22/26 22:29:15 forward run command(s) finished, took 0.649 seconds
+11/22/26 22:29:15 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:15 done, took 0 seconds
+
+
+-->11/22/26 22:29:15 run complete, took: 0.65 seconds
+-->4 of 10 complete, 0 failed
+
+
+11/22/26 22:29:15 processing template files with 1 threads...
+11/22/26 22:29:15 done, took 0 seconds
+11/22/26 22:29:15 calling forward run command(s)
+11/22/26 22:29:15 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 319393
+...exit_code: 319393
+...status: 0
+11/22/26 22:29:15 forward run command(s) finished, took 0.711 seconds
+11/22/26 22:29:15 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:15 done, took 0 seconds
+
+
+-->11/22/26 22:29:15 run complete, took: 0.715 seconds
+-->5 of 10 complete, 0 failed
+
+
+11/22/26 22:29:15 processing template files with 1 threads...
+11/22/26 22:29:15 done, took 0 seconds
+11/22/26 22:29:15 calling forward run command(s)
+11/22/26 22:29:15 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 319411
+...exit_code: 319411
+...status: 0
+11/22/26 22:29:16 forward run command(s) finished, took 0.751 seconds
+11/22/26 22:29:16 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:16 done, took 0 seconds
+
+
+-->11/22/26 22:29:16 run complete, took: 0.756 seconds
+-->6 of 10 complete, 0 failed
+
+
+11/22/26 22:29:16 processing template files with 1 threads...
+11/22/26 22:29:16 done, took 0 seconds
+11/22/26 22:29:16 calling forward run command(s)
+11/22/26 22:29:16 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 319445
+...exit_code: 319445
+...status: 0
+11/22/26 22:29:17 forward run command(s) finished, took 0.703 seconds
+11/22/26 22:29:17 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:17 done, took 0 seconds
+
+
+-->11/22/26 22:29:17 run complete, took: 0.705 seconds
+-->7 of 10 complete, 0 failed
+
+
+11/22/26 22:29:17 processing template files with 1 threads...
+11/22/26 22:29:17 done, took 0.001 seconds
+11/22/26 22:29:17 calling forward run command(s)
+11/22/26 22:29:17 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 319508
+...exit_code: 319508
+...status: 0
+11/22/26 22:29:18 forward run command(s) finished, took 0.763 seconds
+11/22/26 22:29:18 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:18 done, took 0 seconds
+
+
+-->11/22/26 22:29:18 run complete, took: 0.766 seconds
+-->8 of 10 complete, 0 failed
+
+
+11/22/26 22:29:18 processing template files with 1 threads...
+11/22/26 22:29:18 done, took 0 seconds
+11/22/26 22:29:18 calling forward run command(s)
+11/22/26 22:29:18 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 319526
+...exit_code: 319526
+...status: 0
+11/22/26 22:29:18 forward run command(s) finished, took 0.725 seconds
+11/22/26 22:29:18 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:18 done, took 0 seconds
+
+
+-->11/22/26 22:29:18 run complete, took: 0.726 seconds
+-->9 of 10 complete, 0 failed
+
+
+11/22/26 22:29:18 processing template files with 1 threads...
+11/22/26 22:29:18 done, took 0.001 seconds
+11/22/26 22:29:18 calling forward run command(s)
+11/22/26 22:29:18 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 319573
+...exit_code: 319573
+...status: 0
+11/22/26 22:29:19 forward run command(s) finished, took 0.667 seconds
+11/22/26 22:29:19 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:19 done, took 0 seconds
+
+
+-->11/22/26 22:29:19 run complete, took: 0.672 seconds
+-->10 of 10 complete, 0 failed
+
+
+
+
+
+    ---  serial run manager runs summary:  ---    
+    10 of 10 complete, 0 failed
+    process took : 7.147 seconds
+
+
+
+
+  testing upgrade vectors... 
+
+  ...Lambda testing complete for iteration 2
+    starting phi = 250.591;  ending phi = 200.308  (79.9339% of starting phi)
+
+
+OPTIMISATION ITERATION NUMBER: 3
+
+  Iteration type: base parameter solution
+  SVD Package: RedSVD
+  Model calls so far : 31
+
+  calculating jacobian... 
+
+
+
+    ---  starting serial run manager for 5 runs ---    
+
+
+11/22/26 22:29:19 processing template files with 1 threads...
+11/22/26 22:29:19 done, took 0 seconds
+11/22/26 22:29:19 calling forward run command(s)
+11/22/26 22:29:19 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 319594
+...exit_code: 319594
+...status: 0
+11/22/26 22:29:20 forward run command(s) finished, took 0.634 seconds
+11/22/26 22:29:20 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:20 done, took 0 seconds
+
+
+-->11/22/26 22:29:20 run complete, took: 0.636 seconds
+-->1 of 5 complete, 0 failed
+
+
+11/22/26 22:29:20 processing template files with 1 threads...
+11/22/26 22:29:20 done, took 0 seconds
+11/22/26 22:29:20 calling forward run command(s)
+11/22/26 22:29:20 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 319612
+...exit_code: 319612
+...status: 0
+11/22/26 22:29:20 forward run command(s) finished, took 0.702 seconds
+11/22/26 22:29:20 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:20 done, took 0 seconds
+
+
+-->11/22/26 22:29:20 run complete, took: 0.704 seconds
+-->2 of 5 complete, 0 failed
+
+
+11/22/26 22:29:20 processing template files with 1 threads...
+11/22/26 22:29:20 done, took 0 seconds
+11/22/26 22:29:20 calling forward run command(s)
+11/22/26 22:29:20 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 319637
+...exit_code: 319637
+...status: 0
+11/22/26 22:29:21 forward run command(s) finished, took 0.667 seconds
+11/22/26 22:29:21 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:21 done, took 0.004 seconds
+
+
+-->11/22/26 22:29:21 run complete, took: 0.678 seconds
+-->3 of 5 complete, 0 failed
+
+
+11/22/26 22:29:21 processing template files with 1 threads...
+11/22/26 22:29:21 done, took 0 seconds
+11/22/26 22:29:21 calling forward run command(s)
+11/22/26 22:29:21 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 319662
+...exit_code: 319662
+...status: 0
+11/22/26 22:29:22 forward run command(s) finished, took 0.723 seconds
+11/22/26 22:29:22 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:22 done, took 0.005 seconds
+
+
+-->11/22/26 22:29:22 run complete, took: 0.729 seconds
+-->4 of 5 complete, 0 failed
+
+
+11/22/26 22:29:22 processing template files with 1 threads...
+11/22/26 22:29:22 done, took 0 seconds
+11/22/26 22:29:22 calling forward run command(s)
+11/22/26 22:29:22 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 319690
+...exit_code: 319690
+...status: 0
+11/22/26 22:29:23 forward run command(s) finished, took 0.703 seconds
+11/22/26 22:29:23 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:23 done, took 0.002 seconds
+
+
+-->11/22/26 22:29:23 run complete, took: 0.709 seconds
+-->5 of 5 complete, 0 failed
+
+
+
+
+
+    ---  serial run manager runs summary:  ---    
+    5 of 5 complete, 0 failed
+    process took : 3.458 seconds
+
+
+
+
+  computing upgrade vectors... 
+  computing upgrade vector (lambda = 0.1)  1 / 5             
+  computing upgrade vector (lambda = 1)  2 / 5             
+  computing upgrade vector (lambda = 10)  3 / 5             
+  computing upgrade vector (lambda = 100)  4 / 5             
+  computing upgrade vector (lambda = 1000)  5 / 5             
+-->starting iteration FOSM process...
+-->finished iteration FOSM process...
+
+  performing upgrade vector model runs... 
+
+
+    ---  starting serial run manager for 10 runs ---    
+
+
+11/22/26 22:29:23 processing template files with 1 threads...
+11/22/26 22:29:23 done, took 0.002 seconds
+11/22/26 22:29:23 calling forward run command(s)
+11/22/26 22:29:23 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 320020
+...exit_code: 320020
+...status: 0
+11/22/26 22:29:23 forward run command(s) finished, took 0.811 seconds
+11/22/26 22:29:23 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:23 done, took 0 seconds
+
+
+-->11/22/26 22:29:23 run complete, took: 0.818 seconds
+-->1 of 10 complete, 0 failed
+
+
+11/22/26 22:29:23 processing template files with 1 threads...
+11/22/26 22:29:23 done, took 0.003 seconds
+11/22/26 22:29:23 calling forward run command(s)
+11/22/26 22:29:23 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 320753
+...exit_code: 320753
+...status: 0
+11/22/26 22:29:24 forward run command(s) finished, took 0.78 seconds
+11/22/26 22:29:24 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:24 done, took 0 seconds
+
+
+-->11/22/26 22:29:24 run complete, took: 0.787 seconds
+-->2 of 10 complete, 0 failed
+
+
+11/22/26 22:29:24 processing template files with 1 threads...
+11/22/26 22:29:24 done, took 0 seconds
+11/22/26 22:29:24 calling forward run command(s)
+11/22/26 22:29:24 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 320927
+...exit_code: 320927
+...status: 0
+11/22/26 22:29:25 forward run command(s) finished, took 0.68 seconds
+11/22/26 22:29:25 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:25 done, took 0 seconds
+
+
+-->11/22/26 22:29:25 run complete, took: 0.685 seconds
+-->3 of 10 complete, 0 failed
+
+
+11/22/26 22:29:25 processing template files with 1 threads...
+11/22/26 22:29:25 done, took 0 seconds
+11/22/26 22:29:25 calling forward run command(s)
+11/22/26 22:29:25 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 320950
+...exit_code: 320950
+...status: 0
+11/22/26 22:29:26 forward run command(s) finished, took 0.692 seconds
+11/22/26 22:29:26 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:26 done, took 0.005 seconds
+
+
+-->11/22/26 22:29:26 run complete, took: 0.698 seconds
+-->4 of 10 complete, 0 failed
+
+
+11/22/26 22:29:26 processing template files with 1 threads...
+11/22/26 22:29:26 done, took 0 seconds
+11/22/26 22:29:26 calling forward run command(s)
+11/22/26 22:29:26 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 320970
+...exit_code: 320970
+...status: 0
+11/22/26 22:29:26 forward run command(s) finished, took 0.684 seconds
+11/22/26 22:29:26 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:26 done, took 0 seconds
+
+
+-->11/22/26 22:29:26 run complete, took: 0.685 seconds
+-->5 of 10 complete, 0 failed
+
+
+11/22/26 22:29:26 processing template files with 1 threads...
+11/22/26 22:29:26 done, took 0.001 seconds
+11/22/26 22:29:26 calling forward run command(s)
+11/22/26 22:29:26 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 321000
+...exit_code: 321000
+...status: 0
+11/22/26 22:29:27 forward run command(s) finished, took 0.689 seconds
+11/22/26 22:29:27 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:27 done, took 0 seconds
+
+
+-->11/22/26 22:29:27 run complete, took: 0.692 seconds
+-->6 of 10 complete, 0 failed
+
+
+11/22/26 22:29:27 processing template files with 1 threads...
+11/22/26 22:29:27 done, took 0 seconds
+11/22/26 22:29:27 calling forward run command(s)
+11/22/26 22:29:27 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 321038
+...exit_code: 321038
+...status: 0
+11/22/26 22:29:28 forward run command(s) finished, took 0.683 seconds
+11/22/26 22:29:28 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:28 done, took 0 seconds
+
+
+-->11/22/26 22:29:28 run complete, took: 0.686 seconds
+-->7 of 10 complete, 0 failed
+
+
+11/22/26 22:29:28 processing template files with 1 threads...
+11/22/26 22:29:28 done, took 0 seconds
+11/22/26 22:29:28 calling forward run command(s)
+11/22/26 22:29:28 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 321057
+...exit_code: 321057
+...status: 0
+11/22/26 22:29:28 forward run command(s) finished, took 0.721 seconds
+11/22/26 22:29:28 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:28 done, took 0 seconds
+
+
+-->11/22/26 22:29:28 run complete, took: 0.722 seconds
+-->8 of 10 complete, 0 failed
+
+
+11/22/26 22:29:28 processing template files with 1 threads...
+11/22/26 22:29:28 done, took 0 seconds
+11/22/26 22:29:28 calling forward run command(s)
+11/22/26 22:29:28 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 321110
+...exit_code: 321110
+...status: 0
+11/22/26 22:29:29 forward run command(s) finished, took 0.655 seconds
+11/22/26 22:29:29 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:29 done, took 0 seconds
+
+
+-->11/22/26 22:29:29 run complete, took: 0.656 seconds
+-->9 of 10 complete, 0 failed
+
+
+11/22/26 22:29:29 processing template files with 1 threads...
+11/22/26 22:29:29 done, took 0 seconds
+11/22/26 22:29:29 calling forward run command(s)
+11/22/26 22:29:29 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 321131
+...exit_code: 321131
+...status: 0
+11/22/26 22:29:30 forward run command(s) finished, took 0.736 seconds
+11/22/26 22:29:30 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:30 done, took 0.003 seconds
+
+
+-->11/22/26 22:29:30 run complete, took: 0.745 seconds
+-->10 of 10 complete, 0 failed
+
+
+
+
+
+    ---  serial run manager runs summary:  ---    
+    10 of 10 complete, 0 failed
+    process took : 7.181 seconds
+
+
+
+
+  testing upgrade vectors... 
+
+  ...Lambda testing complete for iteration 3
+    starting phi = 200.308;  ending phi = 197.517  (98.6068% of starting phi)
+
+    Switching to central derivatives:
+
+
+OPTIMISATION ITERATION NUMBER: 4
+
+  Iteration type: base parameter solution
+  SVD Package: RedSVD
+  Model calls so far : 46
+
+  calculating jacobian... 
+
+
+
+    ---  starting serial run manager for 10 runs ---    
+
+
+11/22/26 22:29:30 processing template files with 1 threads...
+11/22/26 22:29:30 done, took 0 seconds
+11/22/26 22:29:30 calling forward run command(s)
+11/22/26 22:29:30 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 321154
+...exit_code: 321154
+...status: 0
+11/22/26 22:29:30 forward run command(s) finished, took 0.706 seconds
+11/22/26 22:29:30 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:30 done, took 0 seconds
+
+
+-->11/22/26 22:29:30 run complete, took: 0.712 seconds
+-->1 of 10 complete, 0 failed
+
+
+11/22/26 22:29:30 processing template files with 1 threads...
+11/22/26 22:29:30 done, took 0.001 seconds
+11/22/26 22:29:30 calling forward run command(s)
+11/22/26 22:29:30 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 321178
+...exit_code: 321178
+...status: 0
+11/22/26 22:29:31 forward run command(s) finished, took 0.728 seconds
+11/22/26 22:29:31 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:31 done, took 0.004 seconds
+
+
+-->11/22/26 22:29:31 run complete, took: 0.734 seconds
+-->2 of 10 complete, 0 failed
+
+
+11/22/26 22:29:31 processing template files with 1 threads...
+11/22/26 22:29:31 done, took 0 seconds
+11/22/26 22:29:31 calling forward run command(s)
+11/22/26 22:29:31 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 321221
+...exit_code: 321221
+...status: 0
+11/22/26 22:29:32 forward run command(s) finished, took 0.719 seconds
+11/22/26 22:29:32 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:32 done, took 0.004 seconds
+
+
+-->11/22/26 22:29:32 run complete, took: 0.73 seconds
+-->3 of 10 complete, 0 failed
+
+
+11/22/26 22:29:32 processing template files with 1 threads...
+11/22/26 22:29:32 done, took 0 seconds
+11/22/26 22:29:32 calling forward run command(s)
+11/22/26 22:29:32 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 321243
+...exit_code: 321243
+...status: 0
+11/22/26 22:29:33 forward run command(s) finished, took 0.835 seconds
+11/22/26 22:29:33 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:33 done, took 0.003 seconds
+
+
+-->11/22/26 22:29:33 run complete, took: 0.839 seconds
+-->4 of 10 complete, 0 failed
+
+
+11/22/26 22:29:33 processing template files with 1 threads...
+11/22/26 22:29:33 done, took 0 seconds
+11/22/26 22:29:33 calling forward run command(s)
+11/22/26 22:29:33 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 321298
+...exit_code: 321298
+...status: 0
+11/22/26 22:29:34 forward run command(s) finished, took 0.749 seconds
+11/22/26 22:29:34 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:34 done, took 0 seconds
+
+
+-->11/22/26 22:29:34 run complete, took: 0.751 seconds
+-->5 of 10 complete, 0 failed
+
+
+11/22/26 22:29:34 processing template files with 1 threads...
+11/22/26 22:29:34 done, took 0 seconds
+11/22/26 22:29:34 calling forward run command(s)
+11/22/26 22:29:34 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 321317
+...exit_code: 321317
+...status: 0
+11/22/26 22:29:34 forward run command(s) finished, took 0.791 seconds
+11/22/26 22:29:34 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:34 done, took 0 seconds
+
+
+-->11/22/26 22:29:34 run complete, took: 0.792 seconds
+-->6 of 10 complete, 0 failed
+
+
+11/22/26 22:29:34 processing template files with 1 threads...
+11/22/26 22:29:34 done, took 0 seconds
+11/22/26 22:29:34 calling forward run command(s)
+11/22/26 22:29:34 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 321346
+...exit_code: 321346
+...status: 0
+11/22/26 22:29:35 forward run command(s) finished, took 0.667 seconds
+11/22/26 22:29:35 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:35 done, took 0.003 seconds
+
+
+-->11/22/26 22:29:35 run complete, took: 0.672 seconds
+-->7 of 10 complete, 0 failed
+
+
+11/22/26 22:29:35 processing template files with 1 threads...
+11/22/26 22:29:35 done, took 0 seconds
+11/22/26 22:29:35 calling forward run command(s)
+11/22/26 22:29:35 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 321380
+...exit_code: 321380
+...status: 0
+11/22/26 22:29:36 forward run command(s) finished, took 0.72 seconds
+11/22/26 22:29:36 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:36 done, took 0 seconds
+
+
+-->11/22/26 22:29:36 run complete, took: 0.722 seconds
+-->8 of 10 complete, 0 failed
+
+
+11/22/26 22:29:36 processing template files with 1 threads...
+11/22/26 22:29:36 done, took 0 seconds
+11/22/26 22:29:36 calling forward run command(s)
+11/22/26 22:29:36 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 321408
+...exit_code: 321408
+...status: 0
+11/22/26 22:29:36 forward run command(s) finished, took 0.67 seconds
+11/22/26 22:29:36 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:36 done, took 0.001 seconds
+
+
+-->11/22/26 22:29:36 run complete, took: 0.672 seconds
+-->9 of 10 complete, 0 failed
+
+
+11/22/26 22:29:36 processing template files with 1 threads...
+11/22/26 22:29:36 done, took 0 seconds
+11/22/26 22:29:36 calling forward run command(s)
+11/22/26 22:29:36 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 321441
+...exit_code: 321441
+...status: 0
+11/22/26 22:29:37 forward run command(s) finished, took 0.661 seconds
+11/22/26 22:29:37 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:37 done, took 0 seconds
+
+
+-->11/22/26 22:29:37 run complete, took: 0.662 seconds
+-->10 of 10 complete, 0 failed
+
+
+
+
+
+    ---  serial run manager runs summary:  ---    
+    10 of 10 complete, 0 failed
+    process took : 7.292 seconds
+
+
+
+
+  computing upgrade vectors... 
+  computing upgrade vector (lambda = 0.1)  1 / 5             
+  computing upgrade vector (lambda = 1)  2 / 5             
+  computing upgrade vector (lambda = 10)  3 / 5             
+  computing upgrade vector (lambda = 100)  4 / 5             
+  computing upgrade vector (lambda = 1000)  5 / 5             
+-->starting iteration FOSM process...
+-->finished iteration FOSM process...
+
+  performing upgrade vector model runs... 
+
+
+    ---  starting serial run manager for 10 runs ---    
+
+
+11/22/26 22:29:37 processing template files with 1 threads...
+11/22/26 22:29:37 done, took 0.002 seconds
+11/22/26 22:29:37 calling forward run command(s)
+11/22/26 22:29:37 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 321466
+...exit_code: 321466
+...status: 0
+11/22/26 22:29:38 forward run command(s) finished, took 0.758 seconds
+11/22/26 22:29:38 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:38 done, took 0 seconds
+
+
+-->11/22/26 22:29:38 run complete, took: 0.761 seconds
+-->1 of 10 complete, 0 failed
+
+
+11/22/26 22:29:38 processing template files with 1 threads...
+11/22/26 22:29:38 done, took 0 seconds
+11/22/26 22:29:38 calling forward run command(s)
+11/22/26 22:29:38 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 321489
+...exit_code: 321489
+...status: 0
+11/22/26 22:29:39 forward run command(s) finished, took 0.696 seconds
+11/22/26 22:29:39 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:39 done, took 0 seconds
+
+
+-->11/22/26 22:29:39 run complete, took: 0.697 seconds
+-->2 of 10 complete, 0 failed
+
+
+11/22/26 22:29:39 processing template files with 1 threads...
+11/22/26 22:29:39 done, took 0 seconds
+11/22/26 22:29:39 calling forward run command(s)
+11/22/26 22:29:39 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 321517
+...exit_code: 321517
+...status: 0
+11/22/26 22:29:39 forward run command(s) finished, took 0.767 seconds
+11/22/26 22:29:39 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:39 done, took 0 seconds
+
+
+-->11/22/26 22:29:39 run complete, took: 0.772 seconds
+-->3 of 10 complete, 0 failed
+
+
+11/22/26 22:29:39 processing template files with 1 threads...
+11/22/26 22:29:39 done, took 0 seconds
+11/22/26 22:29:39 calling forward run command(s)
+11/22/26 22:29:39 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 321553
+...exit_code: 321553
+...status: 0
+11/22/26 22:29:40 forward run command(s) finished, took 0.702 seconds
+11/22/26 22:29:40 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:40 done, took 0 seconds
+
+
+-->11/22/26 22:29:40 run complete, took: 0.703 seconds
+-->4 of 10 complete, 0 failed
+
+
+11/22/26 22:29:40 processing template files with 1 threads...
+11/22/26 22:29:40 done, took 0 seconds
+11/22/26 22:29:40 calling forward run command(s)
+11/22/26 22:29:40 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 321571
+...exit_code: 321571
+...status: 0
+11/22/26 22:29:41 forward run command(s) finished, took 0.687 seconds
+11/22/26 22:29:41 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:41 done, took 0.004 seconds
+
+
+-->11/22/26 22:29:41 run complete, took: 0.694 seconds
+-->5 of 10 complete, 0 failed
+
+
+11/22/26 22:29:41 processing template files with 1 threads...
+11/22/26 22:29:41 done, took 0 seconds
+11/22/26 22:29:41 calling forward run command(s)
+11/22/26 22:29:41 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 321599
+...exit_code: 321599
+...status: 0
+11/22/26 22:29:41 forward run command(s) finished, took 0.727 seconds
+11/22/26 22:29:41 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:41 done, took 0 seconds
+
+
+-->11/22/26 22:29:41 run complete, took: 0.728 seconds
+-->6 of 10 complete, 0 failed
+
+
+11/22/26 22:29:41 processing template files with 1 threads...
+11/22/26 22:29:41 done, took 0 seconds
+11/22/26 22:29:41 calling forward run command(s)
+11/22/26 22:29:41 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 321624
+...exit_code: 321624
+...status: 0
+11/22/26 22:29:42 forward run command(s) finished, took 0.656 seconds
+11/22/26 22:29:42 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:42 done, took 0.003 seconds
+
+
+-->11/22/26 22:29:42 run complete, took: 0.666 seconds
+-->7 of 10 complete, 0 failed
+
+
+11/22/26 22:29:42 processing template files with 1 threads...
+11/22/26 22:29:42 done, took 0 seconds
+11/22/26 22:29:42 calling forward run command(s)
+11/22/26 22:29:42 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 321648
+...exit_code: 321648
+...status: 0
+11/22/26 22:29:43 forward run command(s) finished, took 0.676 seconds
+11/22/26 22:29:43 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:43 done, took 0 seconds
+
+
+-->11/22/26 22:29:43 run complete, took: 0.679 seconds
+-->8 of 10 complete, 0 failed
+
+
+11/22/26 22:29:43 processing template files with 1 threads...
+11/22/26 22:29:43 done, took 0 seconds
+11/22/26 22:29:43 calling forward run command(s)
+11/22/26 22:29:43 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 321670
+...exit_code: 321670
+...status: 0
+11/22/26 22:29:44 forward run command(s) finished, took 0.831 seconds
+11/22/26 22:29:44 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:44 done, took 0 seconds
+
+
+-->11/22/26 22:29:44 run complete, took: 0.832 seconds
+-->9 of 10 complete, 0 failed
+
+
+11/22/26 22:29:44 processing template files with 1 threads...
+11/22/26 22:29:44 done, took 0.003 seconds
+11/22/26 22:29:44 calling forward run command(s)
+11/22/26 22:29:44 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 321694
+...exit_code: 321694
+...status: 0
+11/22/26 22:29:44 forward run command(s) finished, took 0.771 seconds
+11/22/26 22:29:44 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:44 done, took 0 seconds
+
+
+-->11/22/26 22:29:44 run complete, took: 0.777 seconds
+-->10 of 10 complete, 0 failed
+
+
+
+
+
+    ---  serial run manager runs summary:  ---    
+    10 of 10 complete, 0 failed
+    process took : 7.32 seconds
+
+
+
+
+  testing upgrade vectors... 
+
+  ...Lambda testing complete for iteration 4
+    starting phi = 197.517;  ending phi = 197.454  (99.968% of starting phi)
+
+
+OPTIMISATION ITERATION NUMBER: 5
+
+  Iteration type: base parameter solution
+  SVD Package: RedSVD
+  Model calls so far : 66
+
+  calculating jacobian... 
+
+
+
+    ---  starting serial run manager for 10 runs ---    
+
+
+11/22/26 22:29:44 processing template files with 1 threads...
+11/22/26 22:29:44 done, took 0 seconds
+11/22/26 22:29:44 calling forward run command(s)
+11/22/26 22:29:44 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 321718
+...exit_code: 321718
+...status: 0
+11/22/26 22:29:45 forward run command(s) finished, took 0.766 seconds
+11/22/26 22:29:45 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:45 done, took 0.004 seconds
+
+
+-->11/22/26 22:29:45 run complete, took: 0.771 seconds
+-->1 of 10 complete, 0 failed
+
+
+11/22/26 22:29:45 processing template files with 1 threads...
+11/22/26 22:29:45 done, took 0 seconds
+11/22/26 22:29:45 calling forward run command(s)
+11/22/26 22:29:45 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 321751
+...exit_code: 321751
+...status: 0
+11/22/26 22:29:46 forward run command(s) finished, took 0.707 seconds
+11/22/26 22:29:46 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:46 done, took 0 seconds
+
+
+-->11/22/26 22:29:46 run complete, took: 0.711 seconds
+-->2 of 10 complete, 0 failed
+
+
+11/22/26 22:29:46 processing template files with 1 threads...
+11/22/26 22:29:46 done, took 0.003 seconds
+11/22/26 22:29:46 calling forward run command(s)
+11/22/26 22:29:46 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 321790
+...exit_code: 321790
+...status: 0
+11/22/26 22:29:47 forward run command(s) finished, took 0.699 seconds
+11/22/26 22:29:47 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:47 done, took 0.004 seconds
+
+
+-->11/22/26 22:29:47 run complete, took: 0.709 seconds
+-->3 of 10 complete, 0 failed
+
+
+11/22/26 22:29:47 processing template files with 1 threads...
+11/22/26 22:29:47 done, took 0 seconds
+11/22/26 22:29:47 calling forward run command(s)
+11/22/26 22:29:47 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 321818
+...exit_code: 321818
+...status: 0
+11/22/26 22:29:47 forward run command(s) finished, took 0.715 seconds
+11/22/26 22:29:47 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:47 done, took 0 seconds
+
+
+-->11/22/26 22:29:47 run complete, took: 0.72 seconds
+-->4 of 10 complete, 0 failed
+
+
+11/22/26 22:29:47 processing template files with 1 threads...
+11/22/26 22:29:47 done, took 0 seconds
+11/22/26 22:29:47 calling forward run command(s)
+11/22/26 22:29:47 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 321857
+...exit_code: 321857
+...status: 0
+11/22/26 22:29:48 forward run command(s) finished, took 0.753 seconds
+11/22/26 22:29:48 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:48 done, took 0 seconds
+
+
+-->11/22/26 22:29:48 run complete, took: 0.754 seconds
+-->5 of 10 complete, 0 failed
+
+
+11/22/26 22:29:48 processing template files with 1 threads...
+11/22/26 22:29:48 done, took 0.002 seconds
+11/22/26 22:29:48 calling forward run command(s)
+11/22/26 22:29:48 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 321906
+...exit_code: 321906
+...status: 0
+11/22/26 22:29:49 forward run command(s) finished, took 0.711 seconds
+11/22/26 22:29:49 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:49 done, took 0 seconds
+
+
+-->11/22/26 22:29:49 run complete, took: 0.718 seconds
+-->6 of 10 complete, 0 failed
+
+
+11/22/26 22:29:49 processing template files with 1 threads...
+11/22/26 22:29:49 done, took 0 seconds
+11/22/26 22:29:49 calling forward run command(s)
+11/22/26 22:29:49 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 321944
+...exit_code: 321944
+...status: 0
+11/22/26 22:29:49 forward run command(s) finished, took 0.726 seconds
+11/22/26 22:29:49 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:49 done, took 0 seconds
+
+
+-->11/22/26 22:29:49 run complete, took: 0.732 seconds
+-->7 of 10 complete, 0 failed
+
+
+11/22/26 22:29:49 processing template files with 1 threads...
+11/22/26 22:29:49 done, took 0.001 seconds
+11/22/26 22:29:49 calling forward run command(s)
+11/22/26 22:29:49 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 321980
+...exit_code: 321980
+...status: 0
+11/22/26 22:29:50 forward run command(s) finished, took 0.746 seconds
+11/22/26 22:29:50 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:50 done, took 0 seconds
+
+
+-->11/22/26 22:29:50 run complete, took: 0.751 seconds
+-->8 of 10 complete, 0 failed
+
+
+11/22/26 22:29:50 processing template files with 1 threads...
+11/22/26 22:29:50 done, took 0 seconds
+11/22/26 22:29:50 calling forward run command(s)
+11/22/26 22:29:50 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 322004
+...exit_code: 322004
+...status: 0
+11/22/26 22:29:51 forward run command(s) finished, took 0.743 seconds
+11/22/26 22:29:51 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:51 done, took 0 seconds
+
+
+-->11/22/26 22:29:51 run complete, took: 0.748 seconds
+-->9 of 10 complete, 0 failed
+
+
+11/22/26 22:29:51 processing template files with 1 threads...
+11/22/26 22:29:51 done, took 0 seconds
+11/22/26 22:29:51 calling forward run command(s)
+11/22/26 22:29:51 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 322029
+...exit_code: 322029
+...status: 0
+11/22/26 22:29:52 forward run command(s) finished, took 0.695 seconds
+11/22/26 22:29:52 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:52 done, took 0 seconds
+
+
+-->11/22/26 22:29:52 run complete, took: 0.699 seconds
+-->10 of 10 complete, 0 failed
+
+
+
+
+
+    ---  serial run manager runs summary:  ---    
+    10 of 10 complete, 0 failed
+    process took : 7.318 seconds
+
+
+
+
+  computing upgrade vectors... 
+  computing upgrade vector (lambda = 0.1)  1 / 5             
+  computing upgrade vector (lambda = 1)  2 / 5             
+  computing upgrade vector (lambda = 10)  3 / 5             
+  computing upgrade vector (lambda = 100)  4 / 5             
+  computing upgrade vector (lambda = 1000)  5 / 5             
+-->starting iteration FOSM process...
+-->finished iteration FOSM process...
+
+  performing upgrade vector model runs... 
+
+
+    ---  starting serial run manager for 10 runs ---    
+
+
+11/22/26 22:29:52 processing template files with 1 threads...
+11/22/26 22:29:52 done, took 0 seconds
+11/22/26 22:29:52 calling forward run command(s)
+11/22/26 22:29:52 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 322051
+...exit_code: 322051
+...status: 0
+11/22/26 22:29:52 forward run command(s) finished, took 0.724 seconds
+11/22/26 22:29:52 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:52 done, took 0 seconds
+
+
+-->11/22/26 22:29:52 run complete, took: 0.725 seconds
+-->1 of 10 complete, 0 failed
+
+
+11/22/26 22:29:52 processing template files with 1 threads...
+11/22/26 22:29:52 done, took 0.003 seconds
+11/22/26 22:29:52 calling forward run command(s)
+11/22/26 22:29:52 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 322082
+...exit_code: 322082
+...status: 0
+11/22/26 22:29:53 forward run command(s) finished, took 0.676 seconds
+11/22/26 22:29:53 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:53 done, took 0 seconds
+
+
+-->11/22/26 22:29:53 run complete, took: 0.684 seconds
+-->2 of 10 complete, 0 failed
+
+
+11/22/26 22:29:53 processing template files with 1 threads...
+11/22/26 22:29:53 done, took 0.003 seconds
+11/22/26 22:29:53 calling forward run command(s)
+11/22/26 22:29:53 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 322122
+...exit_code: 322122
+...status: 0
+11/22/26 22:29:54 forward run command(s) finished, took 0.694 seconds
+11/22/26 22:29:54 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:54 done, took 0 seconds
+
+
+-->11/22/26 22:29:54 run complete, took: 0.7 seconds
+-->3 of 10 complete, 0 failed
+
+
+11/22/26 22:29:54 processing template files with 1 threads...
+11/22/26 22:29:54 done, took 0.003 seconds
+11/22/26 22:29:54 calling forward run command(s)
+11/22/26 22:29:54 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 322145
+...exit_code: 322145
+...status: 0
+11/22/26 22:29:55 forward run command(s) finished, took 0.709 seconds
+11/22/26 22:29:55 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:55 done, took 0 seconds
+
+
+-->11/22/26 22:29:55 run complete, took: 0.714 seconds
+-->4 of 10 complete, 0 failed
+
+
+11/22/26 22:29:55 processing template files with 1 threads...
+11/22/26 22:29:55 done, took 0 seconds
+11/22/26 22:29:55 calling forward run command(s)
+11/22/26 22:29:55 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 322184
+...exit_code: 322184
+...status: 0
+11/22/26 22:29:55 forward run command(s) finished, took 0.726 seconds
+11/22/26 22:29:55 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:55 done, took 0 seconds
+
+
+-->11/22/26 22:29:55 run complete, took: 0.727 seconds
+-->5 of 10 complete, 0 failed
+
+
+11/22/26 22:29:55 processing template files with 1 threads...
+11/22/26 22:29:55 done, took 0 seconds
+11/22/26 22:29:55 calling forward run command(s)
+11/22/26 22:29:55 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 322223
+...exit_code: 322223
+...status: 0
+11/22/26 22:29:56 forward run command(s) finished, took 0.864 seconds
+11/22/26 22:29:56 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:56 done, took 0 seconds
+
+
+-->11/22/26 22:29:56 run complete, took: 0.866 seconds
+-->6 of 10 complete, 0 failed
+
+
+11/22/26 22:29:56 processing template files with 1 threads...
+11/22/26 22:29:56 done, took 0 seconds
+11/22/26 22:29:56 calling forward run command(s)
+11/22/26 22:29:56 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 322251
+...exit_code: 322251
+...status: 0
+11/22/26 22:29:57 forward run command(s) finished, took 0.718 seconds
+11/22/26 22:29:57 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:57 done, took 0 seconds
+
+
+-->11/22/26 22:29:57 run complete, took: 0.72 seconds
+-->7 of 10 complete, 0 failed
+
+
+11/22/26 22:29:57 processing template files with 1 threads...
+11/22/26 22:29:57 done, took 0 seconds
+11/22/26 22:29:57 calling forward run command(s)
+11/22/26 22:29:57 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 322297
+...exit_code: 322297
+...status: 0
+11/22/26 22:29:58 forward run command(s) finished, took 0.772 seconds
+11/22/26 22:29:58 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:58 done, took 0 seconds
+
+
+-->11/22/26 22:29:58 run complete, took: 0.774 seconds
+-->8 of 10 complete, 0 failed
+
+
+11/22/26 22:29:58 processing template files with 1 threads...
+11/22/26 22:29:58 done, took 0 seconds
+11/22/26 22:29:58 calling forward run command(s)
+11/22/26 22:29:58 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 322315
+...exit_code: 322315
+...status: 0
+11/22/26 22:29:58 forward run command(s) finished, took 0.658 seconds
+11/22/26 22:29:58 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:58 done, took 0 seconds
+
+
+-->11/22/26 22:29:58 run complete, took: 0.664 seconds
+-->9 of 10 complete, 0 failed
+
+
+11/22/26 22:29:58 processing template files with 1 threads...
+11/22/26 22:29:58 done, took 0.001 seconds
+11/22/26 22:29:58 calling forward run command(s)
+11/22/26 22:29:58 calling forward run command: 'python forward_run_AN_v1.py' 
+...pid: 322348
+...exit_code: 322348
+...status: 0
+11/22/26 22:29:59 forward run command(s) finished, took 0.676 seconds
+11/22/26 22:29:59 processing instruction files with 1 threads...
+thread 0 processed 1 instruction files
+11/22/26 22:29:59 done, took 0.001 seconds
+
+
+-->11/22/26 22:29:59 run complete, took: 0.68 seconds
+-->10 of 10 complete, 0 failed
+
+
+
+
+
+    ---  serial run manager runs summary:  ---    
+    10 of 10 complete, 0 failed
+    process took : 7.259 seconds
+
+
+
+
+  testing upgrade vectors... 
+
+  ...Lambda testing complete for iteration 5
+    starting phi = 197.454;  ending phi = 197.455  (100% of starting phi)
+
+-----------------------------------------
+     ---   OPTIMIZATION COMPLETE   ---   
+  Reason for terminating PEST++ simulation: PHIREDSTP / NPHISTP criterion met
+  Summary of termination criteria:
+  NOPTMAX = 12 ;  NOPT at termination = 5
+  NPHINORED = 3 ;  NPHINORED at termination = 1
+  NRELPAR = 3; RELPARSTP = 0.01 ;  NRELPAR at termination = 1
+  PHIREDSTP = 0.01; NPHISTP = 3
+  NPHISTP lowest PHI's:
+        197.454
+        197.455
+        197.517
+
+FINAL OPTIMISATION RESULTS
+
+  Final phi                                           Total : 197.454
+  Contribution to phi from observation group     "forecast" : 0
+  Contribution to phi from observation group      "nitrate" : 91.5617
+  Contribution to phi from observation group    "phosphate" : 105.892
+
+
+...starting posterior FOSM calculations...
+
+
+pestpp-glm analysis complete...
+started at 11/22/26 22:28:57
+finished at 11/22/26 22:29:59
+took 1.01667 minutes
