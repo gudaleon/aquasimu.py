@@ -1,0 +1,12 @@
+noptmax:12, npar_adj:5, nnz_obs:242
+pestpp-glm finished in 62 s
+noptmax:4, npar_adj:5, nnz_obs:242
+Traceback (most recent call last):
+  File "/workspace/bioreactor_model_AN_v1/scripts/run_pest_AN_v1.py", line 38, in <module>
+    pyemu.os_utils.start_workers(str(w), str(BIN / "pestpp-ies"), "pest_AN_v1.pst", num_workers=8,
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                                 worker_root=str(P / "workers_tmp"), master_dir=str(m), port=4004, verbose=False)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/venv_AN/lib/python3.13/site-packages/pyemu/utils/os_utils.py", line 350, in start_workers
+    raise Exception("worker root dir not found")
+Exception: worker root dir not found

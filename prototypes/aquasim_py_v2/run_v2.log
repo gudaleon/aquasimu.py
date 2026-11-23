@@ -1,0 +1,2 @@
+rhs ms 2.0639896392822266 neq 7440
+The solver successfully reached the end of the integration interval. nfev 48302 njev 425 nlu 1505 runtime_s 198.14487051963806

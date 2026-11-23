@@ -1,0 +1,11 @@
+group,parameter,median,low,high,transform,source
+eggshell,q_max,35.27463678055381,11.5,108.2,log,Lee2022: column 11.5 to batch 108.2 g/kg
+eggshell,K_L,0.5,0.01,10.0,log,"no value in Lee2022 abstract; wide, replace with batch isotherm"
+eggshell,k_ad,2.0,0.05,50.0,log,1/d; no value in Lee2022 abstract; wide
+eggshell,k_mi,0.0,0.0,0.5,lin,g P/kg/d zero-order sorbed->mineral (Zhou-type); 0 by default
+eggshell,theta_P,1.02,1.0,1.06,lin,weak temperature effect on sorption; assumption
+eggshell,q_max_per_kg_bed,1.4109854712221526,0.46,4.328,log,"derived, eggshell fraction 0.04"
+woodchip,vmax_N20,12.743209429293888,3.0769230769230766,33.84615384615385,log,g N/m3 pore/d; Addy2016 R20=8.3 bed basis; Schipper2010 2-22
+woodchip,k_N20,1.0,0.1,5.0,log,1/d first-order alternative; wide
+woodchip,K_N,2.0,0.2,10.0,log,g N/m3 Michaelis-Menten half-saturation; wide
+woodchip,theta_N,1.07961014595389,1.04,1.12,lin,Addy2016 Q10=2.15 -> theta=1.080

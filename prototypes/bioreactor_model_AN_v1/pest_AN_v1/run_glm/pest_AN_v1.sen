@@ -1,0 +1,48 @@
+                    PARAMETER SENSITIVITIES: CASE pest_AN_v1
+
+
+NUMERIC PARAMETER SENSITIVITIES FOR OPTIMISATION ITERATION NO. 1   ----->
+  Parameter name   Group        Current Value        PEST_CSS_wo_reg
+   k_ads           model        0.00200000000000     0.539851370614      
+   k_n             model        8.00000000000        0.282327441512      
+   q_max           model        2.00000000000        0.602771746109      
+   theta_n         model        1.04000000000        1.19754896136       
+   vmax_n          model        3.00000000000        0.492922750179      
+
+
+NUMERIC PARAMETER SENSITIVITIES FOR OPTIMISATION ITERATION NO. 2   ----->
+  Parameter name   Group        Current Value        PEST_CSS_wo_reg
+   k_ads           model        0.00386161756000     0.517021263760      
+   k_n             model        4.98718691480        0.419051137547      
+   q_max           model        1.24152425766        0.635775810502      
+   theta_n         model        1.08356208554        2.14162259067       
+   vmax_n          model        9.55218386065        0.750924155076      
+
+
+NUMERIC PARAMETER SENSITIVITIES FOR OPTIMISATION ITERATION NO. 3   ----->
+  Parameter name   Group        Current Value        PEST_CSS_wo_reg
+   k_ads           model        0.00599155238000     0.483813389437      
+   k_n             model        4.10192781506        0.398508168725      
+   q_max           model        0.922482733176       0.660857814380      
+   theta_n         model        1.07989209273        2.13426541917       
+   vmax_n          model        8.21167854456        0.774997079459      
+
+
+NUMERIC PARAMETER SENSITIVITIES FOR OPTIMISATION ITERATION NO. 4   ----->
+  Parameter name   Group        Current Value        PEST_CSS_wo_reg
+   k_ads           model        0.00619392034000     0.481829274135      
+   k_n             model        3.48562791947        0.378681470326      
+   q_max           model        0.916174368306       0.662765608899      
+   theta_n         model        1.07783725579        2.61168064162       
+   vmax_n          model        7.54343278692        0.796132099764      
+
+
+NUMERIC PARAMETER SENSITIVITIES FOR OPTIMISATION ITERATION NO. 5   ----->
+  Parameter name   Group        Current Value        PEST_CSS_wo_reg
+   k_ads           model        0.00619466195000     0.481822133772      
+   k_n             model        3.41760411934        0.376037065071      
+   q_max           model        0.916127257705       0.662778851229      
+   theta_n         model        1.07764706559        2.61852511110       
+   vmax_n          model        7.48903444986        0.797589329925      
+
+
