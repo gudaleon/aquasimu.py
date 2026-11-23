@@ -1,0 +1,19 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+outputs/
+reference/
+
+# Eawag / AQUASIM material stays out of the repository.
+*.aqu
+aquasimb
+aquasim.ini
+*.aqu.txt
